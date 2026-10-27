@@ -7,7 +7,7 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111113'/%3E%3Cpath d='M16 6v20M20.5 10.5h-6a3 3 0 000 6h3a3 3 0 010 6h-6.5' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ── CLAUDE AESTHETIC \u2014 warm cream light / warm dark ── */
+/* ── CLAUDE AESTHETIC \2014  warm cream light / warm dark ── */
 :root{
   /* Dark theme */
   --bg:#1F1E1B;--bg2:#28271F;--bg3:#302F27;--bg4:#3A3830;
@@ -97,7 +97,7 @@ body.sb-hidden #sb-toggle{left:8px}
 h1{font-size:22px;font-weight:650;letter-spacing:-.3px}
 .ph{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:22px;flex-wrap:wrap;gap:12px}
 
-/* HERO \u2014 unified summary block */
+/* HERO \2014  unified summary block */
 .hero{background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--r2);padding:26px 30px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;box-shadow:var(--sh)}
 .hl{font-size:11px;color:var(--tx3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;font-weight:600}
 .hv{font-family:var(--numf,'DM Mono',monospace);font-size:26px;font-weight:500;letter-spacing:-.5px}
@@ -179,7 +179,7 @@ td{padding:8px 8px;font-size:11.5px;white-space:normal}
    Headers and text wrap only between words; if a table still doesn't fit,
    it scrolls sideways instead. */
 .tw th,.tw td,.tw td *,#float-head th{word-break:normal!important;overflow-wrap:normal!important}
-/* Text columns (supplier, buyer, party, remarks\u2026) keep a sensible width so a
+/* Text columns (supplier, buyer, party, remarks\2026 ) keep a sensible width so a
    name wraps onto about two lines instead of one word per line. */
 .tw td:not(.mn):not(.dm):not(.r):not(.no-print){min-width:100px}
 /* Numbers, LC numbers and dates always stay on one line. */
@@ -187,7 +187,7 @@ td.mn{font-family:var(--numf,'DM Mono',monospace);font-size:11px;white-space:now
 td.dm{color:var(--tx3);font-size:11px;white-space:nowrap}
 tfoot tr{border-top:1px solid var(--bdr2);background:var(--bg3)}
 tfoot td{padding:8px 12px;font-weight:600;font-family:var(--numf,'DM Mono',monospace);font-size:12px}
-tfoot td.r{white-space:nowrap} /* totals like \u09f373,500 no longer split across two lines */
+tfoot td.r{white-space:nowrap} /* totals like \9f3 73,500 no longer split across two lines */
 
 /* FLOATING TABLE HEADER + SCROLLBAR */
 #float-head{position:fixed;top:0;z-index:150;overflow:hidden;display:none;background:var(--bg3);box-shadow:0 4px 12px rgba(38,38,36,.14);border-bottom:1px solid var(--bdr2);pointer-events:auto}
@@ -199,7 +199,7 @@ tfoot td.r{white-space:nowrap} /* totals like \u09f373,500 no longer split acros
 #float-scroll::-webkit-scrollbar-thumb{background:var(--tx3);border-radius:7px;border:3px solid var(--bg2)}
 #float-scroll::-webkit-scrollbar-thumb:hover{background:var(--tx2)}
 /* Firefox only. In Chrome/Safari, setting scrollbar-color switches OFF the
-   ::-webkit-scrollbar styling above \u2014 and on a Mac that turns this into an
+   ::-webkit-scrollbar styling above \2014  and on a Mac that turns this into an
    auto-hiding scrollbar, i.e. an empty strip until you start scrolling. */
 @supports (-moz-appearance:none){#float-scroll{scrollbar-width:auto;scrollbar-color:var(--tx3) var(--bg2)}}
 @media print{#float-head,#float-scroll{display:none!important}}
@@ -301,7 +301,7 @@ tfoot td.r{white-space:nowrap} /* totals like \u09f373,500 no longer split acros
 .audit-modal-msg strong{color:var(--tx)}
 
 
-/* PRINT \u2014 unchanged, print output already has its own self-contained styles */
+/* PRINT \2014  unchanged, print output already has its own self-contained styles */
 
 .loan-company-name{font-size:24px;font-weight:650;letter-spacing:.1px;color:var(--tx);margin:8px 0 16px;padding-bottom:10px;border-bottom:2px solid var(--ac)}
 .loan-company-name:not(:first-of-type){margin-top:8px}
@@ -347,7 +347,7 @@ tfoot td.r{white-space:nowrap} /* totals like \u09f373,500 no longer split acros
 }
 @media print{#sb-toggle{display:none!important}}
 
-/* ── MERIDIAN THEME (light) \u2014 colours, fonts and styling only.
+/* ── MERIDIAN THEME (light) \2014  colours, fonts and styling only.
    Same pages, same tables, same layout; nothing structural changes. ── */
 body.light{
   --bg:#F3F3F4;--bg2:#FFFFFF;--bg3:#F7F7F8;--bg4:#EEEEF0;
@@ -591,6 +591,37 @@ tr.flagged>td:first-child{box-shadow:inset 3px 0 0 var(--rd)}
 body.role-commercial #nav-bsub-alerts, body.role-commercial #nav-bsub-flags{display:none!important}
 td.mn .chip.flagchip{display:table;margin:3px 0 1px;font-family:inherit}
 </style>
+<style>
+/* ===== Supabase release: Admin panel, Stop Acceptance, UD ===== */
+.nav-sec{margin:14px 12px 6px;font-size:10.5px;letter-spacing:.08em;color:var(--tx3);font-weight:700}
+.adm-card{background:var(--bg2);border:1px solid var(--bdr);border-radius:12px;padding:16px;margin-bottom:14px}
+.adm-card h3{margin:0 0 4px;font-size:14px}
+.adm-sub{color:var(--tx3);font-size:12px;margin-bottom:10px}
+.adm-row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+.adm-row .fg{min-width:150px}
+.adm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.adm-table{width:100%;border-collapse:collapse;font-size:13px}
+.adm-table th{text-align:left;color:var(--tx3);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:8px 10px;border-bottom:1px solid var(--bdr)}
+.adm-table td{padding:10px;border-bottom:1px solid var(--bdr);vertical-align:top}
+.adm-pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700;white-space:nowrap}
+.adm-pill.g{background:var(--grbg);color:var(--gr)}.adm-pill.a{background:var(--ambg);color:var(--am)}.adm-pill.r{background:var(--rdbg);color:var(--rd)}.adm-pill.b{background:var(--blbg);color:var(--bl)}.adm-pill.n{background:var(--bg3);color:var(--tx3)}
+.adm-acts a{color:var(--bl);cursor:pointer;margin-right:12px;font-size:12.5px;white-space:nowrap}.adm-acts a.d{color:var(--rd)}
+.adm-big{font-size:20px;font-weight:700}.adm-mut{color:var(--tx3);font-size:12px}
+.adm-warn{background:var(--ambg);color:var(--am);border-radius:10px;padding:10px 14px;font-size:12.5px;margin-bottom:14px;font-weight:600}
+.stop-pile{margin:0 0 18px;border:2px solid var(--rd);border-radius:12px;overflow:hidden;background:var(--bg2)}
+.stop-pile .sp-h{background:var(--rdbg);padding:12px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.stop-pile .sp-h b.t{color:var(--rd);font-size:15px}
+.stop-pile .sp-h .s{font-size:12px;color:var(--tx2);margin-top:2px}
+.stop-pile table{width:100%;border-collapse:collapse;font-size:13px}
+.stop-pile th{text-align:left;font-size:12px;font-weight:600;padding:9px 10px;border-bottom:1px solid var(--bdr);background:var(--bg3)}
+.stop-pile td{padding:10px;border-bottom:1px solid var(--bdr);vertical-align:middle}
+.stop-pile .r{text-align:right}
+.chip.stopchip{background:var(--rd);color:#fff}
+.nsi .cnt.stopcnt{margin-left:4px;background:var(--rd);color:#fff}
+.ud-bar{margin:0 0 12px;padding:10px 16px;border-radius:12px;background:var(--ambg);color:var(--am);font-weight:700;font-size:13px;display:flex;justify-content:space-between;gap:10px;cursor:pointer}
+.ud-bar span+span{font-weight:500}
+
+</style>
 </head>
 <body>
 <script>
@@ -614,7 +645,7 @@ catch (e) { document.body.classList.add('light'); }
 
 <!-- CONNECTION INDICATOR -->
 <div id="conn-banner" style="display:none;position:fixed;top:0;left:0;right:0;background:rgba(255,59,48,.92);color:#fff;text-align:center;padding:9px 16px;z-index:9999;font-size:13px;font-weight:500;align-items:center;justify-content:center;gap:8px">
-  <span>&#9888;</span> No internet connection \u2014 changes will not be saved until reconnected
+  <span>&#9888;</span> No internet connection &#x2014; changes will not be saved until reconnected
 </div>
 
 <!-- SESSION BAR -->
@@ -679,15 +710,33 @@ catch (e) { document.body.classList.add('light'); }
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
         Liability
       </div>
+      <div class="nav-sec only-admin">ADMIN ONLY</div>
+      <div class="ni only-admin" data-page="admin" onclick="navigate('admin')" id="nav-admin">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        Admin panel
+      </div>
     </nav>
     <div class="sb-ft">
       <div class="sb-me"><b id="me-name"></b><small id="me-role"></small>
-        <div class="links"><a onclick="openChangePassword()">Change password</a><a class="only-admin" onclick="openUsers()">Users</a><a onclick="doLogout()">Log out</a></div></div>
-      <button class="sb-backup" onclick="openBackup()" title="Backups"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>Backup<small id="sb-backup-time">&mdash;</small></span></button>
+        <div class="links"><a onclick="doLogout()">Log out</a></div></div>
+      <button class="sb-backup only-admin" onclick="navigate('admin');admTab('backups')" title="Backups"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>Backup<small id="sb-backup-time">&mdash;</small></span></button>
     </div>
   </aside>
 
   <main id="main">
+<!-- ===== Supabase release: Admin panel page ===== -->
+<div id="page-admin" class="page">
+  <div class="ph"><div><h1>Admin panel</h1><div class="sub">Only you can see this. Users, PINs, backups, rates and everything people do in the app.</div></div></div>
+  <div class="tabs" id="adm-tabs">
+    <div class="tab active" data-t="activity" onclick="admTab('activity')">Activity</div>
+    <div class="tab" data-t="users" onclick="admTab('users')">Users</div>
+    <div class="tab" data-t="pins" onclick="admTab('pins')">PINs</div>
+    <div class="tab" data-t="backups" onclick="admTab('backups')">Backups</div>
+    <div class="tab" data-t="rates" onclick="admTab('rates')">Rates</div>
+  </div>
+  <div id="adm-body"></div>
+</div>
+
     <!-- DASHBOARD -->
     <div id="page-dashboard" class="page">
       <div class="ph">
@@ -699,9 +748,9 @@ catch (e) { document.body.classList.add('light'); }
       </div>
       <div class="hero">
         <div>
-          <div class="hl">Total Receivable \u2014 All Parties</div>
-          <div class="hv" id="hero-v">\u09f30</div>
-          <div class="hs" id="hero-s">\u2014</div>
+          <div class="hl">Total Receivable &#x2014; All Parties</div>
+          <div class="hv" id="hero-v">&#x9f3;0</div>
+          <div class="hs" id="hero-s">&#x2014;</div>
         </div>
         <div id="hero-r"></div>
       </div>
@@ -792,6 +841,7 @@ catch (e) { document.body.classList.add('light'); }
 
       <!-- 2. Documents at Bank -->
       <div class="bank-sub" id="bsub-atbank" style="display:none">
+        <div id="ab-pile"></div>
         <div class="sw">
           <div class="sw-h"><span class="sw-t">Documents at Bank</span><span class="sw-tot">Total: <b id="ab-total"></b></span></div>
           <div class="tw"><table>
@@ -911,7 +961,7 @@ catch (e) { document.body.classList.add('light'); }
     <!-- LOANS PAGE -->
     <div id="page-loans" class="page">
       <div class="ph">
-        <div><h1>Loans</h1><p style="color:var(--tx3);font-size:12px;margin-top:4px">Independent loan tracker \u2014 not synced with Cash LC or Banking</p></div>
+        <div><h1>Loans</h1><p style="color:var(--tx3);font-size:12px;margin-top:4px">Independent loan tracker &#x2014; not synced with Cash LC or Banking</p></div>
         <div style="display:flex;gap:10px;align-items:center" class="no-print">
           <div style="position:relative">
             <input type="text" id="loan-search-inp" placeholder="Search account no..."
@@ -942,7 +992,7 @@ catch (e) { document.body.classList.add('light'); }
       <!-- Machine Loan (combined, shown once) -->
       <div style="margin-top:28px;padding-top:18px;border-top:2px solid var(--bdr)">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:10px">
-          <h2 style="font-size:16px;font-weight:600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:2px"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>Machine Loan <span style="font-size:11px;font-weight:400;color:var(--tx3)">(combined \u2014 both companies)</span></h2>
+          <h2 style="font-size:16px;font-weight:600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:2px"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>Machine Loan <span style="font-size:11px;font-weight:400;color:var(--tx3)">(combined &#x2014; both companies)</span></h2>
           <div style="display:flex;gap:10px;align-items:center" class="no-print">
             <div style="display:flex;align-items:center;gap:8px;background:var(--bg2);border:1px solid var(--bdr2);border-radius:var(--r);padding:6px 10px">
               <span style="font-size:11px;color:var(--tx2);font-weight:500;white-space:nowrap">RATE (same for all)</span>
@@ -993,7 +1043,7 @@ catch (e) { document.body.classList.add('light'); }
     <!-- FDR PAGE -->
     <div id="page-fdr" class="page">
       <div class="ph">
-        <div><h1>FDR</h1><p style="color:var(--tx3);font-size:12px;margin-top:4px">Fixed Deposit Receipts \u2014 independent tracker, not synced with Cash LC, Banking, or Loans</p></div>
+        <div><h1>FDR</h1><p style="color:var(--tx3);font-size:12px;margin-top:4px">Fixed Deposit Receipts &#x2014; independent tracker, not synced with Cash LC, Banking, or Loans</p></div>
         <div class="no-print">
           <button class="btn bed bsm" onclick="openReviewUncheckedFDR()" title="FDRs not confirmed against this week's bank statement">Review Unchecked <span id="fdr-unchecked-count" style="background:var(--am);color:#fff;border-radius:10px;padding:1px 6px;font-size:10px;margin-left:4px">0</span></button>
         </div>
@@ -1005,19 +1055,19 @@ catch (e) { document.body.classList.add('light'); }
       <div id="fdr-dashboard-view">
         <div class="hero">
           <div>
-            <div class="hl">Total FDR Value \u2014 All Entities</div>
+            <div class="hl">Total FDR Value &#x2014; All Entities</div>
             <div style="display:flex;gap:34px;margin-top:4px;flex-wrap:wrap">
               <div>
                 <div style="font-size:11.5px;color:var(--tx2);font-weight:600;margin-bottom:4px">Company FDRs</div>
-                <div class="hv" id="fdr-total-company" style="font-size:22px">\u09f30</div>
+                <div class="hv" id="fdr-total-company" style="font-size:22px">&#x9f3;0</div>
               </div>
               <div>
                 <div style="font-size:11.5px;color:var(--tx2);font-weight:600;margin-bottom:4px">Personal FDRs</div>
-                <div class="hv" id="fdr-total-personal" style="font-size:22px">\u09f30</div>
+                <div class="hv" id="fdr-total-personal" style="font-size:22px">&#x9f3;0</div>
               </div>
               <div>
                 <div style="font-size:11.5px;color:var(--tx2);font-weight:600;margin-bottom:4px">Grand Total</div>
-                <div class="hv" id="fdr-total-grand" style="font-size:26px;color:var(--ac)">\u09f30</div>
+                <div class="hv" id="fdr-total-grand" style="font-size:26px;color:var(--ac)">&#x9f3;0</div>
               </div>
             </div>
           </div>
@@ -1077,7 +1127,7 @@ catch (e) { document.body.classList.add('light'); }
     <!-- CREDITORS PAGE -->
     <div id="page-creditors" class="page">
       <div class="ph">
-        <div><h1>Various Creditors</h1><p style="color:var(--tx3);font-size:12px;margin-top:4px">Sources you're owed money from \u2014 independent tracker, not synced with Cash LC, Banking, Loans, or FDR</p></div>
+        <div><h1>Various Creditors</h1><p style="color:var(--tx3);font-size:12px;margin-top:4px">Sources you're owed money from &#x2014; independent tracker, not synced with Cash LC, Banking, Loans, or FDR</p></div>
         <div class="no-print" style="display:flex;gap:10px;align-items:center">
           <button class="btn bg bsm" onclick="openCreditorRates()" title="Set the BDT exchange rate for each currency">&#9881; Rates</button>
           <button class="btn bp bsm" onclick="printAllCreditors()" title="Print every category in one document"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:2px"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg>Print All</button>
@@ -1089,8 +1139,8 @@ catch (e) { document.body.classList.add('light'); }
       <!-- Grand total banner -->
       <div class="hero">
         <div>
-          <div class="hl">Grand Total \u2014 All Categories, BDT Equivalent</div>
-          <div class="hv" id="cred-grand-total" style="font-size:32px;color:var(--ac)">\u09f30</div>
+          <div class="hl">Grand Total &#x2014; All Categories, BDT Equivalent</div>
+          <div class="hv" id="cred-grand-total" style="font-size:32px;color:var(--ac)">&#x9f3;0</div>
         </div>
       </div>
 
@@ -1108,10 +1158,10 @@ catch (e) { document.body.classList.add('light'); }
       <div id="cred-categories-container"></div>
     </div>
 
-    <!-- LIABILITY PAGE \u2014 simple, single flat table, no categories -->
+    <!-- LIABILITY PAGE &#x2014; simple, single flat table, no categories -->
     <div id="page-liability" class="page">
       <div class="ph">
-        <div><h1>Various Liability</h1><p style="color:var(--tx3);font-size:12px;margin-top:4px">A single flat list \u2014 independent tracker, not synced with any other module. Shares the same live USD rate as Creditors.</p></div>
+        <div><h1>Various Liability</h1><p style="color:var(--tx3);font-size:12px;margin-top:4px">A single flat list &#x2014; independent tracker, not synced with any other module. Shares the same live USD rate as Creditors.</p></div>
         <div class="no-print">
           <button class="btn bp bsm" onclick="printLiability()" title="Print this table"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:2px"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg>Print</button>
         </div>
@@ -1122,8 +1172,8 @@ catch (e) { document.body.classList.add('light'); }
       <!-- Grand total banner -->
       <div class="hero">
         <div>
-          <div class="hl">Total Liability \u2014 BDT Equivalent</div>
-          <div class="hv" id="liab-grand-total" style="font-size:32px;color:var(--ac)">\u09f30</div>
+          <div class="hl">Total Liability &#x2014; BDT Equivalent</div>
+          <div class="hv" id="liab-grand-total" style="font-size:32px;color:var(--ac)">&#x9f3;0</div>
         </div>
       </div>
 
@@ -1160,7 +1210,7 @@ catch (e) { document.body.classList.add('light'); }
             &#8592; Back
           </button>
           <span class="lk" onclick="navigate('dashboard')">Dashboard</span>
-          <span>\u203a</span><span id="p-bc" style="color:var(--tx)"></span>
+          <span>&#x203a;</span><span id="p-bc" style="color:var(--tx)"></span>
         </div>
       </div>
       <div class="ph">
@@ -1176,32 +1226,33 @@ catch (e) { document.body.classList.add('light'); }
       <div class="cg" id="p-kpis"></div>
       <div class="acc-panel">
         <div class="arow">
-          <div class="aitem"><div class="al">Previous Balance</div><div class="av" id="acpv">\u2014</div></div>
+          <div class="aitem"><div class="al">Previous Balance</div><div class="av" id="acpv">&#x2014;</div></div>
           <div class="adivider"></div>
-          <div class="aitem"><div class="al">Acceptance Given</div><div class="av g" id="acg">\u2014</div></div>
+          <div class="aitem"><div class="al">Acceptance Given</div><div class="av g" id="acg">&#x2014;</div></div>
           <div class="adivider"></div>
-          <div class="aitem"><div class="al">Not Given</div><div class="av a" id="acng">\u2014</div></div>
+          <div class="aitem"><div class="al">Not Given</div><div class="av a" id="acng">&#x2014;</div></div>
           <div class="adivider"></div>
-          <div class="aitem"><div class="al">Credit Received</div><div class="av b" id="acrc">\u2014</div></div>
+          <div class="aitem"><div class="al">Credit Received</div><div class="av b" id="acrc">&#x2014;</div></div>
           <div class="adivider"></div>
-          <div class="aitem"><div class="al">Status</div><div id="acst">\u2014</div></div>
+          <div class="aitem"><div class="al">Status</div><div id="acst">&#x2014;</div></div>
         </div>
         <div class="due-row">
           <span class="due-label" id="due-label">Acceptance Amount Due:</span>
-          <span class="due-val" id="acdv">\u2014</span>
+          <span class="due-val" id="acdv">&#x2014;</span>
         </div>
       </div>
 
       <div class="sw">
         <div class="tabs no-print">
-          <div class="tab active" onclick="switchTab('debit')">Debit \u2014 L/C Entries</div>
-          <div class="tab" onclick="switchTab('credit')">Credit \u2014 Payments</div>
+          <div class="tab active" onclick="switchTab('debit')">Debit &#x2014; L/C Entries</div>
+          <div class="tab" onclick="switchTab('credit')">Credit &#x2014; Payments</div>
           <div class="tab" onclick="switchTab('running')">Running Balance</div>
         </div>
 
         <!-- DEBIT TAB -->
         <div id="tab-debit">
-          <div class="print-section-title">DEBIT \u2014 L/C Entries</div>
+          <div class="print-section-title">DEBIT &#x2014; L/C Entries</div>
+          <div id="ud-bar" class="ud-bar no-print" style="display:none" onclick="udBarClick()"></div>
           <div class="fbar no-print">
             <div class="fg" style="min-width:110px;flex:0"><label>Supplier</label>
               <select id="fc" onchange="rDT()"><option value="">All</option></select></div>
@@ -1210,6 +1261,8 @@ catch (e) { document.body.classList.add('light'); }
                 <option value="">All</option><option value="yes">Given &#x2713;</option>
                 <option value="partial">Partly given</option><option value="none">Not Given</option>
               </select></div>
+            <div class="fg" style="min-width:100px;flex:0"><label>UD</label>
+              <select id="fud" onchange="rDT()"><option value="">All</option><option value="pending">Pending</option><option value="done">Done</option></select></div>
             <div class="fg" style="min-width:105px;flex:0"><label>From</label><input type="date" id="df" onchange="rDT()"></div>
             <div class="fg" style="min-width:105px;flex:0"><label>To</label><input type="date" id="dt" onchange="rDT()"></div>
             <div class="fg" style="flex:0;align-self:flex-end"><button class="btn bg bsm" onclick="clearDf()">Clear</button></div>
@@ -1224,7 +1277,7 @@ catch (e) { document.body.classList.add('light'); }
 
         <!-- CREDIT TAB -->
         <div id="tab-credit" style="display:none">
-          <div class="print-section-title">CREDIT \u2014 Payments</div>
+          <div class="print-section-title">CREDIT &#x2014; Payments</div>
           <div class="fbar no-print">
             <div class="fg"><label>Date</label><input type="date" id="crd"></div>
             <div class="fg"><label>Amount (BDT)</label><input type="number" id="cra" placeholder="0"></div>
@@ -1303,7 +1356,7 @@ catch (e) { document.body.classList.add('light'); }
       </div>
       <div id="print-combined-row" style="display:none;background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--r);padding:12px 14px;margin-bottom:0">
         <label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;color:var(--tx)">
-          <input type="checkbox" id="print-combined"> <strong>Combine both ledgers</strong> \u2014 show Accessories + Fabric entries together, tagged by ledger
+          <input type="checkbox" id="print-combined"> <strong>Combine both ledgers</strong> &#x2014; show Accessories + Fabric entries together, tagged by ledger
         </label>
       </div>
       <div style="background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--r);padding:12px 14px">
@@ -1341,7 +1394,7 @@ catch (e) { document.body.classList.add('light'); }
       <div class="mfg"><label>Party Type</label>
         <select id="pm-type">
           <option value="accessories">Accessories LC</option>
-          <option value="fabric">Fabric LC \u2014 commission, packages &amp; delivery</option>
+          <option value="fabric">Fabric LC &#x2014; commission, packages &amp; delivery</option>
         </select>
       </div>
       <div class="mfg"><label>Previous Balance (BDT)</label><input type="number" id="pm-p" placeholder="0 if none"></div>
@@ -1393,7 +1446,7 @@ catch (e) { document.body.classList.add('light'); }
         <input type="text" id="lco" placeholder="Type or pick from list..." autocomplete="off"
           oninput="filterCoList()" onfocus="filterCoList()" onblur="setTimeout(hideCoList,200)"
           onkeydown="handleCoKey(event)">
-        <div style="font-size:11px;color:var(--tx3);margin-top:3px">Select existing or type new \u2014 saved automatically. Shared with Banking.</div>
+        <div style="font-size:11px;color:var(--tx3);margin-top:3px">Select existing or type new &#x2014; saved automatically. Shared with Banking.</div>
       </div>
       <div class="mr">
         <div class="mfg"><label>USD Amount</label><input type="number" id="lu" placeholder="0.00" step="0.01" oninput="cBDT()"></div>
@@ -1695,7 +1748,7 @@ var _mutationSeq = 0, _inflightMutations = 0;
 // The app speaks camelCase with '' for "empty"; the database uses snake_case with real nulls.
 var SBC = (function () {
   'use strict';
-  var TABLES = {"bank_lcs":[["id","id","t"],["company","company","t"],["date","date","d"],["lcNo","lc_no","t"],["type","type","t"],["buyerName","buyer_name","t"],["expiryDate","expiry_date","d"],["usd","usd","n"],["bdt","bdt","n"],["remarks","remarks","t"],["isCash","is_cash","t"],["cashPartyId","cash_party_id","t"],["cashPartyType","cash_party_type","t"],["acceptedUSD","accepted_usd","n"],["status","status","t"],["supplier","supplier","t"],["closed","closed","t"],["closedDate","closed_date","d"],["version","version","i"],["flag","flag","t"],["flagDate","flag_date","d"],["flagNote","flag_note","t"],["flagHistory","flag_history","t"]],"lc_docs":[["id","id","t"],["bankLcId","bank_lc_id","t"],["lcNo","lc_no","t"],["usd","usd","n"],["status","status","t"],["arrivedDate","arrived_date","d"],["acceptedDate","accepted_date","d"],["maturityDate","maturity_date","d"],["paidDate","paid_date","d"],["remarks","remarks","t"],["dupOk","dup_ok","t"],["createdAt","created_at","t"]],"parties":[["id","id","t"],["name","name","t"],["prevBalance","prev_balance","n"],["startDate","start_date","d"],["customTypes","custom_types","t"],["ptype","ptype","t"]],"debits":[["id","id","t"],["partyId","party_id","t"],["date","date","d"],["lc","lc","t"],["company","company","t"],["usd","usd","n"],["rate","rate","n"],["bdt","bdt","n"],["doc","doc","t"],["accept","accept","t"],["payment","payment","t"],["notes","notes","t"],["commission","commission","n"],["packages","packages","n"],["deliveries","deliveries","t"],["bankCompany","bank_company","t"],["bankLcId","bank_lc_id","t"]],"credits":[["id","id","t"],["partyId","party_id","t"],["date","date","d"],["type","type","t"],["amt","amt","n"],["remarks","remarks","t"]],"loans":[["id","id","t"],["company","company","t"],["loanType","loan_type","t"],["accountNo","account_no","t"],["amount","amount","n"],["installment","installment","n"],["lastVerified","last_verified","t"]],"loans_machine":[["id","id","t"],["accountNo","account_no","t"],["machineType","machine_type","t"],["usd","usd","n"],["rate","rate","n"],["bdt","bdt","n"],["maturityDate","maturity_date","d"]],"fdr":[["id","id","t"],["entity","entity","t"],["entityType","entity_type","t"],["bank","bank","t"],["accountNo","account_no","t"],["amount","amount","n"],["lastVerified","last_verified","t"]],"creditors":[["id","id","t"],["category","category","t"],["name","name","t"],["currency","currency","t"],["amount","amount","n"],["bdtAmount","bdt_amount","n"],["notes","notes","t"],["quantity","quantity","n"],["unit","unit","t"],["rate","rate","n"]],"creditor_settings":[["currency","currency","t"],["rate","rate","n"]],"liabilities":[["id","id","t"],["name","name","t"],["currency","currency","t"],["usdAmount","usd_amount","n"],["bdtAmount","bdt_amount","n"]],"locker_log":[["id","id","t"],["lockerType","locker_type","t"],["txType","tx_type","t"],["amount","amount","n"],["currency","currency","t"],["date","date","d"],["balanceAfter","balance_after","n"],["creditorItemId","creditor_item_id","t"]],"bank_settings":[["key","key","t"],["value","value","n"]],"loan_settings":[["key","key","t"],["value","value","n"]],"module_activity":[["module","module","t"],["lastUpdated","last_updated","t"]],"oplog":[["opId","op_id","t"],["at","at","ts"],["type","type","t"],["result","result","t"]],"audit":[["timestamp","ts","ts"],["action","action","t"],["description","description","t"]]};
+  var TABLES = {"bank_lcs":[["id","id","t"],["company","company","t"],["date","date","d"],["lcNo","lc_no","t"],["type","type","t"],["buyerName","buyer_name","t"],["expiryDate","expiry_date","d"],["usd","usd","n"],["bdt","bdt","n"],["remarks","remarks","t"],["isCash","is_cash","t"],["cashPartyId","cash_party_id","t"],["cashPartyType","cash_party_type","t"],["acceptedUSD","accepted_usd","n"],["status","status","t"],["supplier","supplier","t"],["closed","closed","t"],["closedDate","closed_date","d"],["version","version","i"],["flag","flag","t"],["flagDate","flag_date","d"],["flagNote","flag_note","t"],["flagHistory","flag_history","t"],["stop","stop","t"],["stopDate","stop_date","d"],["stopNote","stop_note","t"],["stopBy","stop_by","t"],["stopHistory","stop_history","t"]],"lc_docs":[["id","id","t"],["bankLcId","bank_lc_id","t"],["lcNo","lc_no","t"],["usd","usd","n"],["status","status","t"],["arrivedDate","arrived_date","d"],["acceptedDate","accepted_date","d"],["maturityDate","maturity_date","d"],["paidDate","paid_date","d"],["remarks","remarks","t"],["dupOk","dup_ok","t"],["createdAt","created_at","t"],["stop","stop","t"],["stopDate","stop_date","d"],["stopNote","stop_note","t"],["stopBy","stop_by","t"],["stopFrom","stop_from","t"],["stopHistory","stop_history","t"]],"parties":[["id","id","t"],["name","name","t"],["prevBalance","prev_balance","n"],["startDate","start_date","d"],["customTypes","custom_types","t"],["ptype","ptype","t"]],"debits":[["id","id","t"],["partyId","party_id","t"],["date","date","d"],["lc","lc","t"],["company","company","t"],["usd","usd","n"],["rate","rate","n"],["bdt","bdt","n"],["doc","doc","t"],["accept","accept","t"],["payment","payment","t"],["notes","notes","t"],["commission","commission","n"],["packages","packages","n"],["deliveries","deliveries","t"],["bankCompany","bank_company","t"],["bankLcId","bank_lc_id","t"],["ud","ud","t"]],"credits":[["id","id","t"],["partyId","party_id","t"],["date","date","d"],["type","type","t"],["amt","amt","n"],["remarks","remarks","t"]],"loans":[["id","id","t"],["company","company","t"],["loanType","loan_type","t"],["accountNo","account_no","t"],["amount","amount","n"],["installment","installment","n"],["lastVerified","last_verified","t"]],"loans_machine":[["id","id","t"],["accountNo","account_no","t"],["machineType","machine_type","t"],["usd","usd","n"],["rate","rate","n"],["bdt","bdt","n"],["maturityDate","maturity_date","d"]],"fdr":[["id","id","t"],["entity","entity","t"],["entityType","entity_type","t"],["bank","bank","t"],["accountNo","account_no","t"],["amount","amount","n"],["lastVerified","last_verified","t"]],"creditors":[["id","id","t"],["category","category","t"],["name","name","t"],["currency","currency","t"],["amount","amount","n"],["bdtAmount","bdt_amount","n"],["notes","notes","t"],["quantity","quantity","n"],["unit","unit","t"],["rate","rate","n"]],"creditor_settings":[["currency","currency","t"],["rate","rate","n"]],"liabilities":[["id","id","t"],["name","name","t"],["currency","currency","t"],["usdAmount","usd_amount","n"],["bdtAmount","bdt_amount","n"]],"locker_log":[["id","id","t"],["lockerType","locker_type","t"],["txType","tx_type","t"],["amount","amount","n"],["currency","currency","t"],["date","date","d"],["balanceAfter","balance_after","n"],["creditorItemId","creditor_item_id","t"]],"bank_settings":[["key","key","t"],["value","value","n"]],"loan_settings":[["key","key","t"],["value","value","n"]],"module_activity":[["module","module","t"],["lastUpdated","last_updated","t"]],"oplog":[["opId","op_id","t"],["at","at","ts"],["type","type","t"],["result","result","t"]],"audit":[["timestamp","ts","ts"],["action","action","t"],["description","description","t"]]};
   function conv(kind, v) {
     if (kind === 't') return v == null ? '' : String(v);
     if (v === '' || v == null) return null;
@@ -1790,8 +1843,8 @@ var SB = (function () {
   var LEGACY_LC = { saveDebit: 1, editDebit: 1, deleteDebit: 1, saveBankLC: 1, editBankLC: 1, deleteBankLC: 1, saveAcceptance: 1, makePayment: 1, undoPayment: 1, deleteAcceptance: 1, saveBankSettings: 1, getBankData: 1, load: 1, loadAll: 1, forceSync: 1 };
   var CONVERSION = { conversionPreview: 1, convertNow: 1, rollbackConversion: 1 };
   var COMMERCIAL_OK = { loadFinance: 1, lcOp: 1, logout: 1, changePassword: 1, logAudit: 1, whoami: 1, loginUsers: 1, login: 1 };
-  var EDGE = { lcOp: 1, refreshMirrors: 1, listUsers: 1, saveUser: 1 };
-  var ROLE_NAMES = { admin: 'Admin', md: 'Managing Director', commercial: 'Commercial' };
+  var EDGE = { lcOp: 1, refreshMirrors: 1, listUsers: 1, saveUser: 1, deleteUser: 1 };
+  var ROLE_NAMES = { admin: 'Admin', md: 'Management', commercial: 'Commercial' };
 
   async function edge(body) {
     var r = await http('POST', '/functions/v1/finance', { body: body });
@@ -1812,7 +1865,7 @@ var SB = (function () {
     if (CASH_WRITES[action] && role && role !== 'admin') return { error: CASH_ROLE_MSG, code: 'FORBIDDEN' };
     if (LEGACY_LC[action]) return { error: UPGRADED };
     if (CONVERSION[action]) return { error: 'Not needed: your data has already been moved to the new database.' };
-    if (EDGE[action]) return edge(body);
+    if (EDGE[action]) return edge(Object.assign({}, body, { action: action }));
 
     var res = await dispatch(action, body, role);
     if (MODULE_OF[action] && res && !res.error && res.ok !== false) {
@@ -1847,17 +1900,7 @@ var SB = (function () {
       }
       case 'logout': { await http('POST', '/auth/v1/logout', {}); return { ok: true }; }
       case 'whoami': return { ok: true };
-      case 'changePassword': {
-        var em = cfg.getEmail();
-        var chk = await http('POST', '/auth/v1/token?grant_type=password', { body: { email: em, password: String(b.oldPassword || '') }, anon: true });
-        if (!chk.ok) return { error: 'Your current password is not correct.' };
-        var pw = String(b.newPassword || '');
-        if (pw.length < 6) return { error: 'The new password must have at least 6 characters.' };
-        var up = await http('PUT', '/auth/v1/user', { body: { password: pw } });
-        if (!up.ok) return { error: String((up.data && (up.data.msg || up.data.message)) || 'The password was not changed.') };
-        try { await rpc('log_audit', { p_action: 'user', p_desc: 'Changed own password' }); } catch (e2) {}
-        return { ok: true, relogin: true };
-      }
+      case 'changePassword': return { error: 'Passwords are changed by the Admin (Admin panel, Users).' };
       // ── load ──
       case 'loadFinance': {
         x = await rpc('load_finance');
@@ -1879,9 +1922,25 @@ var SB = (function () {
         e = await upsert('module_activity', [{ module: String(b.module || ''), last_updated: st }], 'module');
         return e || { ok: true, lastUpdated: st };
       }
+      // ── Admin panel ──
+      case 'adminActivity': {
+        x = await rpc('admin_activity', { p_who: String(b.who || ''), p_module: String(b.module || ''), p_from: b.from || null, p_to: b.to || null, p_limit: Number(b.limit) || 100, p_offset: Number(b.offset) || 0 });
+        return x.ok ? x.data : x.err;
+      }
+      case 'pinsInfo': { x = await rpc('pins_info'); return x.ok ? x.data : x.err; }
+      case 'backupSchedule': { x = await rpc('backup_schedule'); return x.ok ? x.data : x.err; }
+      case 'setPin': {
+        // the Admin confirms with his own password first
+        var chk2 = await http('POST', '/auth/v1/token?grant_type=password', { body: { email: cfg.getEmail(), password: String(b.password || '') }, anon: true });
+        if (!chk2.ok) return { error: 'Your password is not correct.' };
+        x = await rpc('set_pin', { p_kind: String(b.kind || ''), p_new: String(b.pin || '') });
+        if (!x.ok) return x.err;
+        return x.data && x.data.error ? { error: x.data.error } : { ok: true };
+      }
       // ── backups ──
       case 'backupNow': { x = await rpc('take_backup', { p_label: String(b.label || 'Manual') }); return x.ok ? x.data : x.err; }
       case 'listBackups': { x = await rpc('list_backups'); return x.ok ? x.data : x.err; }
+      case 'getBackup': { x = await rpc('get_backup', { p_id: Number(b.fileId) }); return x.ok ? x.data : x.err; }
       case 'exportBackup': { x = await rpc('export_backup'); return x.ok ? x.data : x.err; }
       case 'restoreBackup': { x = await rpc('restore_backup', { p_id: Number(b.fileId), p_pin: String(b.pin || '') }); return x.ok ? x.data : x.err; }
       // ── Cash LC (Admin) ──
@@ -1948,7 +2007,11 @@ var SB = (function () {
     return { ok: true, rates: newRates, lastUpdated: stamp, recomputed: rc.ok ? rc.data : 0 };
   }
 
-  async function verifyPin(kind, pin) { var x = await rpc('verify_pin', { p_kind: kind, p_pin: String(pin || '') }); return x.ok && x.data === true; }
+  // -> { ok, locked?, wait? (minutes), left? (tries left), admin? }
+async function verifyPin(kind, pin) {
+    var x = await rpc('verify_pin', { p_kind: kind, p_pin: String(pin || '') });
+    return x.ok && x.data && typeof x.data === 'object' ? x.data : { ok: false };
+  }
 
   return { init: init, call: call, verifyPin: verifyPin };
 })();
@@ -2252,8 +2315,8 @@ async function navigate(pg,pid) {
   // left a completely blank screen.
   if (isCom() && pg !== 'banking') { pg = 'banking'; pid = 'opened'; }
   if (isCom() && pg === 'banking') pid = 'opened';
-  if ((pg === 'dashboard' || pg === 'party') && !cashLCUnlocked && !isMD()) {
-    var pinOk = await checkPin('2803');
+  if ((pg === 'dashboard' || pg === 'party') && !cashLCUnlocked && !isAdmin()) {
+    var pinOk = await checkPin('cash');
     if (!pinOk) return;
     cashLCUnlocked = true;
   }
@@ -2480,8 +2543,10 @@ function rDT(){
   const fc=document.getElementById('fc').value, fa=document.getElementById('facc').value;
   const df=document.getElementById('df').value, dt=document.getElementById('dt').value;
   let rows=ST.debits.filter(d=>String(d.partyId)===String(p.id));
+  udBar(rows);
   rows.sort((a,b)=>String(a.date).localeCompare(String(b.date)));
   if(fc) rows=rows.filter(r=>r.company===fc);
+  { const fud=document.getElementById('fud'); if(fud&&fud.value) rows=rows.filter(r=>fud.value==='done'?r.ud==='done':r.ud!=='done'); }
   // Acceptance filter works from the LC's documents (Given / Partly / Not given)
   if(fa) rows=rows.filter(r=>{ const v=LCM.debitView(r, debitAgg(r)); return fa==='yes'?v.accept==='full':fa==='partial'?v.accept==='partial':v.accept==='none'; });
   if(df) rows=rows.filter(r=>String(r.date).split('T')[0]>=df);
@@ -2492,17 +2557,17 @@ function rDT(){
   if(isFab){
     const tot = rows.reduce((s,r)=>s+NUM(r.bdt)+NUM(r.commission),0);
     document.getElementById('d-pr').innerHTML=(df||dt)?'Period total: <strong style="color:var(--rd)">'+F(tot)+'</strong>':'';
-    dth.innerHTML='<th>#</th><th>Date</th><th>L/C No.</th><th>Supplier</th><th class="r col-usd">USD</th><th class="r col-rate">Rate</th><th class="r col-bdt">LC BDT</th><th class="r">Comm.</th><th class="r">Total</th><th>Doc</th><th>Accept</th><th>Party Pay</th><th>Bank Pay</th><th class="no-print">Maturity</th><th>Delivered</th><th>Notes</th><th class="no-print">Actions</th>';
-    dtf.innerHTML='<td colspan="8" style="color:var(--tx3);font-size:10px;font-weight:400">Total (filtered, incl. commission)</td><td class="r" style="color:var(--rd);font-weight:500">'+F(tot)+'</td><td colspan="8"></td>';
+    dth.innerHTML='<th>#</th><th>Date</th><th>L/C No.</th><th>Supplier</th><th class="r col-usd">USD</th><th class="r col-rate">Rate</th><th class="r col-bdt">LC BDT</th><th class="r">Comm.</th><th class="r">Total</th><th>UD</th><th>Doc</th><th>Accept</th><th>Party Pay</th><th>Bank Pay</th><th class="no-print">Maturity</th><th>Delivered</th><th>Notes</th><th class="no-print">Actions</th>';
+    dtf.innerHTML='<td colspan="8" style="color:var(--tx3);font-size:10px;font-weight:400">Total (filtered, incl. commission)</td><td class="r" style="color:var(--rd);font-weight:500">'+F(tot)+'</td><td colspan="9"></td>';
   } else {
     const tot = rows.reduce((s,r)=>s+NUM(r.bdt),0);
     document.getElementById('d-pr').innerHTML=(df||dt)?'Period total: <strong style="color:var(--rd)">'+F(tot)+'</strong>':'';
-    dth.innerHTML='<th>#</th><th>Date</th><th>L/C No.</th><th>Supplier</th><th class="r col-usd">USD</th><th class="r col-rate">Rate</th><th class="r col-bdt">BDT</th><th>Doc</th><th>Accept</th><th>Payment</th><th class="no-print">Maturity</th><th>Notes</th><th class="no-print">Actions</th>';
-    dtf.innerHTML='<td colspan="6" style="color:var(--tx3);font-size:10px;font-weight:400">Total (filtered)</td><td class="r" style="color:var(--rd);font-weight:500">'+F(tot)+'</td><td colspan="6"></td>';
+    dth.innerHTML='<th>#</th><th>Date</th><th>L/C No.</th><th>Supplier</th><th class="r col-usd">USD</th><th class="r col-rate">Rate</th><th class="r col-bdt">BDT</th><th>UD</th><th>Doc</th><th>Accept</th><th>Payment</th><th class="no-print">Maturity</th><th>Notes</th><th class="no-print">Actions</th>';
+    dtf.innerHTML='<td colspan="6" style="color:var(--tx3);font-size:10px;font-weight:400">Total (filtered)</td><td class="r" style="color:var(--rd);font-weight:500">'+F(tot)+'</td><td colspan="7"></td>';
   }
 
   const tb=document.getElementById('dtb');
-  const cs = isFab ? 17 : 13;
+  const cs = isFab ? 18 : 14;
   if(!rows.length){tb.innerHTML='<tr><td colspan="'+cs+'" style="text-align:center;color:var(--tx3);padding:24px">No entries found.</td></tr>';return;}
 
   tb.innerHTML=rows.map((r,i)=>{
@@ -2543,7 +2608,7 @@ function rDT(){
         +'<td class="r mn col-bdt" style="color:var(--rd)">'+F(NUM(r.bdt))+'</td>'
         +'<td class="r mn" style="color:var(--bl)">'+(comm?F(comm):'\u2014')+'</td>'
         +'<td class="r mn" style="color:var(--rd);font-weight:500">'+F(total)+'</td>'
-        +'<td>'+pl.doc+'</td><td>'+pl.accept+'</td><td>'+ppBadge+'</td><td>'+pl.pay+'</td>'
+        +'<td>'+udCell(r)+'</td><td>'+pl.doc+'</td><td>'+pl.accept+'</td><td>'+ppBadge+'</td><td>'+pl.pay+'</td>'
         +'<td class="no-print">'+matCell+'</td>'
         +'<td>'+(canEditCash() ? dlvCell : dlvCell.replace(/ onclick="[^"]*"/g, ''))+'</td>'
         +'<td class="note-cell '+(r.notes?'':'empty')+'" title="'+esc(r.notes||'')+'">'+esc(r.notes||'\u2014')+'</td>'
@@ -2553,7 +2618,7 @@ function rDT(){
         +'<td class="dm">'+(i+1)+'</td><td class="dm">'+FD(r.date)+'</td>'+lcCell
         +'<td class="r mn col-usd">'+FU(NUM(r.usd))+'</td><td class="r mn col-rate">'+r.rate+'</td>'
         +'<td class="r mn col-bdt" style="color:var(--rd)">'+F(NUM(r.bdt))+'</td>'
-        +'<td>'+pl.doc+'</td><td>'+pl.accept+'</td><td>'+pl.pay+'</td>'
+        +'<td>'+udCell(r)+'</td><td>'+pl.doc+'</td><td>'+pl.accept+'</td><td>'+pl.pay+'</td>'
         +'<td class="no-print">'+matCell+'</td>'
         +'<td class="note-cell '+(r.notes?'':'empty')+'" title="'+esc(r.notes||'')+'">'+esc(r.notes||'\u2014')+'</td>'
         +actions+'</tr>';
@@ -2561,7 +2626,7 @@ function rDT(){
   }).join('');
 }
 
-function clearDf(){['fc','facc','df','dt'].forEach(id=>{const el=document.getElementById(id);el.value=''});rDT();}
+function clearDf(){['fc','facc','fud','df','dt'].forEach(id=>{const el=document.getElementById(id);el.value=''});rDT();}
 
 // ═══ SECTION: CREDIT TABLE (rCT) ═══
 function rCT(){
@@ -3362,7 +3427,7 @@ function addAudit(type, msg) {
   // Send to Sheets audit log silently
   const p = ST.parties.find(x=>x.id===ST.cParty);
   const pName = p ? p.name : '';
-  api('logAudit',{action:type, description:'['+pName+'] '+msg.replace(/<[^>]*>/g,'')}).catch(function(){});
+  api('logAudit',{action:type, description:(pName?'['+pName+'] ':'')+msg.replace(/<[^>]*>/g,'')}).catch(function(){});
 }
 function renderAudit() {
   const el = document.getElementById('audit-list'); if(!el) return;
@@ -3533,7 +3598,7 @@ function scrollAndHighlight(elId, attempt) {
 // from browsing a different party can silently hide the exact row a search
 // result is trying to show, with no error, making the jump look "broken".
 function clearDebitFiltersForJump() {
-  ['fc','facc','df','dt'].forEach(function(id){
+  ['fc','facc','fud','df','dt'].forEach(function(id){
     var el = document.getElementById(id);
     if (el) el.value = '';
   });
@@ -3701,7 +3766,7 @@ function doPrint(){
   html+='.sc{flex:1;padding:10px 14px;border-right:1px solid #E8DFD5}.sc:last-child{border-right:none}';
   html+='.scl{font-size:7.8px;color:#86868b;text-transform:uppercase;letter-spacing:.4px}.scv{font-size:12.5px;font-weight:700;margin-top:3px;color:#1d1d1f}';
   html+='.ft{margin-top:14px;padding-top:8px;border-top:1px solid #E8DFD5;font-size:8px;color:#86868b;display:flex;justify-content:space-between}';
-  html+='@page{size:A4 portrait;margin:16mm 15mm 28mm 15mm}';
+  html+='@page{size:A4 portrait;margin:16mm 16mm 20mm 16mm;@bottom-left{content:"Cash LC Ledger";font:8px Helvetica,Arial,sans-serif;color:#86868b}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:8px Helvetica,Arial,sans-serif;color:#86868b}}@media print{body{padding:0!important}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}tfoot{display:table-row-group}tr.total{break-inside:avoid}}';
   html+='@media print{';
   html+='body{padding:0 4mm}';
   html+='table{page-break-inside:auto}';
@@ -3775,12 +3840,13 @@ function resolveConfirm(val) {
 
 // ── Security PIN \u2014 custom modal (async, returns Promise<bool>) ──
 var _pinResolve = null;
-var _expectedPin = '388'; // default PIN used for Undo, Delete LC/Credit, Bank Rate/Limit changes
+var _expectedPin = 'action'; // default PIN used for Undo, Delete LC/Credit, Bank Rate/Limit changes
 // Entering the Cash LC section uses a separate PIN (2803) \u2014 pass it explicitly:
 // checkPin('2803'). Every other call site keeps using the shared 388 PIN by
 // calling checkPin() with no argument.
 function checkPin(expectedPin) {
-  _expectedPin = expectedPin || '388';
+  _expectedPin = expectedPin || 'action';
+  if (isAdmin()) return Promise.resolve(true);   // the Admin needs no PIN for anything
   return new Promise(function(resolve) {
     _pinResolve = resolve;
     document.getElementById('pin-input').value = '';
@@ -3793,15 +3859,16 @@ var _pinChecking = false;
 async function submitPin() {
   if (_pinChecking) return;
   var val = document.getElementById('pin-input').value.trim();
+  if (!val) return;
   _pinChecking = true;
-  var ok = false;
-  try { ok = await SB.verifyPin(_expectedPin === '2803' ? 'cash' : 'action', val); } catch (e) { ok = false; }
+  var r = { ok: false };
+  try { r = await SB.verifyPin(_expectedPin === 'cash' ? 'cash' : 'action', val); } catch (e) { r = { ok: false }; }
   _pinChecking = false;
-  if (ok) {
+  if (r && r.ok) {
     cm('m-pin');
     if (_pinResolve) { _pinResolve(true); _pinResolve = null; }
   } else {
-    document.getElementById('pin-error').textContent = 'Incorrect PIN. Try again.';
+    document.getElementById('pin-error').textContent = pinMessage(r);
     document.getElementById('pin-input').value = '';
     setTimeout(function(){ document.getElementById('pin-input').focus(); }, 50);
   }
@@ -3812,7 +3879,7 @@ function cancelPin() {
 }
 
 
-/* ==LCMODEL== (shared, identical copy in Code.gs and the app \u2014 do not edit one without the other) */
+/* ==LCMODEL== (shared, identical copy in the Edge Function and the app \u2014 do not edit one without the other) */
 // ═══ LC DOCUMENT MODEL ═══
 // The single source of truth for every LC is: the LC record (BANK_LCS) plus
 // its documents (LC_DOCS). Each document is one shipment's papers and moves
@@ -3824,7 +3891,7 @@ function cancelPin() {
 // browser (to show the result instantly), so the two can never disagree.
 var LCM = (function () {
   'use strict';
-  var VERSION = 'lcm-2';
+  var VERSION = 'lcm-3';
 
   function num(v) {
     if (typeof v === 'number') return isFinite(v) ? v : 0;
@@ -3895,6 +3962,8 @@ var LCM = (function () {
         : (a.accepted + a.paid) > 0 ? ((a.accepted + a.paid) >= a.target ? 'accepted' : 'partial') : 'open';
       a.debitId = debitByLc[id] || '';
       a.flag = str(a.lc.flag);   // '' | 'hold' | 'cancel' (Admin's marks)
+      a.stop = str(a.lc.stop) === 'yes';   // LC-level STOP ACCEPTANCE
+      a.nStopped = a.docs.filter(function (d) { return str(d.stop) === 'yes'; }).length;
     });
     return { byLc: byLc, orphans: orphans, debitByLc: debitByLc, extraDebits: extraDebits };
   }
@@ -3931,11 +4000,15 @@ var LCM = (function () {
   }
   function debitMirror(agg) {
     var v = debitView({}, agg);
-    return {
+    var m = {
       doc: v.doc === 'full' ? 'yes' : v.doc === 'partial' ? 'partial' : '',
       accept: v.accept === 'full' ? 'yes' : v.accept === 'partial' ? 'partial' : '',
       payment: v.pay === 'full' ? 'paid' : v.pay === 'partial' ? 'partial' : ''
     };
+    // Acceptance cannot be given without the UD, so any acceptance means UD is done.
+    // (It is never switched back to pending here; Admin does that by hand if needed.)
+    if (agg && (agg.accepted + agg.paid) > 0) m.ud = 'done';
+    return m;
   }
 
   // ── Operations ──
@@ -3979,7 +4052,7 @@ var LCM = (function () {
       need(str(f.lcNo).trim(), 'BAD_INPUT', 'LC number is required.');
       need(isDay(f.date), 'BAD_INPUT', 'LC date is required.');
       var c = amount(f.usd, 'LC amount (USD)');
-      var l = { id: id, closed: '', closedDate: '', version: 0, acceptedUSD: 0, status: 'open', isCash: 'no', cashPartyId: '', cashPartyType: '', flag: '', flagDate: '', flagNote: '', flagHistory: '[]' };
+      var l = { id: id, closed: '', closedDate: '', version: 0, acceptedUSD: 0, status: 'open', isCash: 'no', cashPartyId: '', cashPartyType: '', flag: '', flagDate: '', flagNote: '', flagHistory: '[]', stop: '', stopDate: '', stopNote: '', stopBy: '', stopHistory: '[]' };
       LC_FIELDS.forEach(function (k) { l[k] = f[k] == null ? '' : f[k]; });
       l.lcNo = str(f.lcNo).trim(); l.usd = usd(c); l.date = day(f.date); l.expiryDate = day(f.expiryDate);
       l.bdt = num(f.bdt);
@@ -3989,7 +4062,7 @@ var LCM = (function () {
         need(state.parties && state.parties[str(g.partyId)], 'BAD_INPUT', 'Choose the Cash LC party.');
         state.debits[did] = {
           id: did, partyId: str(g.partyId), date: l.date, lc: l.lcNo, company: str(l.supplier), usd: l.usd,
-          rate: num(g.rate), bdt: num(g.bdt), doc: '', accept: '', payment: '', notes: str(g.notes),
+          rate: num(g.rate), bdt: num(g.bdt), doc: '', accept: '', payment: '', ud: 'pending', notes: str(g.notes),
           commission: num(g.commission), packages: num(g.packages), deliveries: '[]', bankCompany: str(l.company), bankLcId: id
         };
         out.debits[did] = true;
@@ -4010,7 +4083,7 @@ var LCM = (function () {
       var db = debitOf(state, l2.id);
       if (!db && op.debit && op.debit.id) {
         var nid = newId(state, 'debits', op.debit.id, 'Cash LC entry');
-        db = state.debits[nid] = { id: nid, doc: '', accept: '', payment: '', deliveries: '[]', commission: 0, packages: 0, notes: '', bankLcId: l2.id };
+        db = state.debits[nid] = { id: nid, doc: '', accept: '', payment: '', ud: 'pending', deliveries: '[]', commission: 0, packages: 0, notes: '', bankLcId: l2.id };
       }
       if (db) {
         if (op.debit) DEBIT_FIELDS.forEach(function (k) { if (op.debit[k] !== undefined) db[k] = k === 'partyId' || k === 'notes' ? str(op.debit[k]) : num(op.debit[k]); });
@@ -4047,8 +4120,13 @@ var LCM = (function () {
       state.docs[did4] = {
         id: did4, bankLcId: str(l4.id), lcNo: l4.lcNo, usd: usd(c4), status: 'atbank',
         arrivedDate: day(g4.arrivedDate), acceptedDate: '', maturityDate: '', paidDate: '',
-        remarks: str(g4.remarks), dupOk: same.length ? 'yes' : '', createdAt: nowIso
+        remarks: str(g4.remarks), dupOk: same.length ? 'yes' : '', createdAt: nowIso,
+        stop: '', stopDate: '', stopNote: '', stopBy: '', stopFrom: '', stopHistory: '[]'
       };
+      if (str(l4.stop) === 'yes') {   // the LC is on STOP ACCEPTANCE: its documents start in the red pile
+        var nd4 = state.docs[did4];
+        nd4.stop = 'yes'; nd4.stopDate = str(l4.stopDate); nd4.stopNote = str(l4.stopNote); nd4.stopBy = str(l4.stopBy); nd4.stopFrom = 'lc';
+      }
       out.docs[did4] = true; touchLc(l4.id);
       return out;
     }
@@ -4096,6 +4174,7 @@ var LCM = (function () {
       ids.forEach(function (id) {
         need(!seen[id], 'BAD_INPUT', 'The same document was listed twice.'); seen[id] = 1;
         var d = getDoc(state, id);
+        need(!(t === 'acceptDocs' && str(d.stop) === 'yes'), 'STOPPED', 'The document of ' + fmt(cents(d.usd)) + ' on LC ' + d.lcNo + ' is on STOP ACCEPTANCE (' + (str(d.stopNote) || 'dispute') + '). Mark the dispute resolved first.');
         need(d.status === from, 'BAD_STATE', t === 'acceptDocs'
           ? (d.status === 'paid' ? 'A document of ' + fmt(cents(d.usd)) + ' on LC ' + d.lcNo + ' is already paid.' : 'A document of ' + fmt(cents(d.usd)) + ' on LC ' + d.lcNo + ' is already accepted.')
           : (d.status === 'paid' ? 'A document of ' + fmt(cents(d.usd)) + ' on LC ' + d.lcNo + ' is already paid.' : 'A document of ' + fmt(cents(d.usd)) + ' on LC ' + d.lcNo + ' has not been accepted yet.'));
@@ -4172,6 +4251,79 @@ var LCM = (function () {
       return out;
     }
 
+    // ── STOP ACCEPTANCE: documents (or a whole LC) held back because of a dispute ──
+    function pushHist(o, entry) {
+      var h = [];
+      try { h = JSON.parse(str(o.stopHistory) || '[]'); if (!Array.isArray(h)) h = []; } catch (e) { h = []; }
+      h.push(entry); o.stopHistory = JSON.stringify(h);
+    }
+    function clearStop(o, op2, outcomeNote) {
+      pushHist(o, { stopped: day(o.stopDate), by: str(o.stopBy), note: str(o.stopNote), resolved: day(op2.date), resolvedBy: str(ctx.user), resolveNote: str(op2.note).trim() });
+      o.stop = ''; o.stopDate = ''; o.stopNote = ''; o.stopBy = ''; o.stopFrom = '';
+    }
+    if (t === 'stopDoc') {
+      var ds = getDoc(state, op.docId);
+      need(ds.status === 'atbank', 'BAD_STATE', 'Only a document that is still at the bank can be stopped.');
+      need(str(ds.stop) !== 'yes', 'BAD_STATE', 'This document is already on STOP ACCEPTANCE.');
+      need(isDay(op.date), 'BAD_INPUT', 'Enter the date.');
+      need(str(op.note).trim(), 'BAD_INPUT', 'Write the reason for the stop.');
+      ds.stop = 'yes'; ds.stopDate = day(op.date); ds.stopNote = str(op.note).trim(); ds.stopBy = str(ctx.user); ds.stopFrom = '';
+      out.docs[ds.id] = true; touchLc(ds.bankLcId);
+      return out;
+    }
+    if (t === 'editStopDoc') {
+      var de = getDoc(state, op.docId);
+      need(str(de.stop) === 'yes', 'BAD_STATE', 'This document is not on STOP ACCEPTANCE.');
+      need(str(op.note).trim(), 'BAD_INPUT', 'Write the reason for the stop.');
+      de.stopNote = str(op.note).trim();
+      out.docs[de.id] = true; touchLc(de.bankLcId);
+      return out;
+    }
+    if (t === 'resolveStopDoc') {
+      var dr = getDoc(state, op.docId);
+      need(str(dr.stop) === 'yes', 'BAD_STATE', 'This document is not on STOP ACCEPTANCE.');
+      need(isDay(op.date), 'BAD_INPUT', 'Enter the date it was resolved.');
+      clearStop(dr, op);
+      out.docs[dr.id] = true; touchLc(dr.bankLcId);
+      return out;
+    }
+    if (t === 'stopLC') {
+      var ls = getLc(state, op.lcId);
+      need(str(ls.stop) !== 'yes', 'BAD_STATE', 'LC ' + ls.lcNo + ' is already on STOP ACCEPTANCE.');
+      need(isDay(op.date), 'BAD_INPUT', 'Enter the date.');
+      need(str(op.note).trim(), 'BAD_INPUT', 'Write the reason for the stop.');
+      ls.stop = 'yes'; ls.stopDate = day(op.date); ls.stopNote = str(op.note).trim(); ls.stopBy = str(ctx.user);
+      out.lcs[ls.id] = true; touchLc(ls.id);
+      keys(state.docs).forEach(function (k) {   // documents already at the bank join the pile
+        var dd = state.docs[k];
+        if (str(dd.bankLcId) === str(ls.id) && dd.status === 'atbank' && str(dd.stop) !== 'yes') {
+          dd.stop = 'yes'; dd.stopDate = ls.stopDate; dd.stopNote = ls.stopNote; dd.stopBy = ls.stopBy; dd.stopFrom = 'lc'; out.docs[k] = true;
+        }
+      });
+      return out;
+    }
+    if (t === 'editStopLC') {
+      var le2 = getLc(state, op.lcId);
+      need(str(le2.stop) === 'yes', 'BAD_STATE', 'LC ' + le2.lcNo + ' is not on STOP ACCEPTANCE.');
+      need(str(op.note).trim(), 'BAD_INPUT', 'Write the reason for the stop.');
+      le2.stopNote = str(op.note).trim();
+      keys(state.docs).forEach(function (k) { var dd = state.docs[k]; if (str(dd.bankLcId) === str(le2.id) && str(dd.stopFrom) === 'lc' && str(dd.stop) === 'yes') { dd.stopNote = le2.stopNote; out.docs[k] = true; } });
+      out.lcs[le2.id] = true; touchLc(le2.id);
+      return out;
+    }
+    if (t === 'resolveStopLC') {
+      var lq = getLc(state, op.lcId);
+      need(str(lq.stop) === 'yes', 'BAD_STATE', 'LC ' + lq.lcNo + ' is not on STOP ACCEPTANCE.');
+      need(isDay(op.date), 'BAD_INPUT', 'Enter the date it was resolved.');
+      keys(state.docs).forEach(function (k) {   // documents that were stopped because of the LC are released with it
+        var dd = state.docs[k];
+        if (str(dd.bankLcId) === str(lq.id) && str(dd.stopFrom) === 'lc' && str(dd.stop) === 'yes') { clearStop(dd, op); out.docs[k] = true; }
+      });
+      clearStop(lq, op);
+      out.lcs[lq.id] = true; touchLc(lq.id);
+      return out;
+    }
+
     if (t === 'reopenLC') {
       var l10 = getLc(state, op.lcId);
       need(str(l10.closed) === 'yes', 'BAD_STATE', 'LC ' + l10.lcNo + ' is not closed.');
@@ -4212,6 +4364,7 @@ var LCM = (function () {
       if (cents(d.usd) <= 0) p.push('doc ' + id + ' has no amount');
       if (d.status === 'atbank' && (d.acceptedDate || d.maturityDate || d.paidDate)) p.push('doc ' + id + ' at bank but has acceptance/payment dates');
       if (d.status === 'accepted' && d.paidDate) p.push('doc ' + id + ' accepted but has a paid date');
+      if (str(d.stop) === 'yes' && d.status !== 'atbank') p.push('doc ' + id + ' is on STOP ACCEPTANCE but is no longer at the bank');
     });
     keys(idx.byLc).forEach(function (id) {
       var a = idx.byLc[id];
@@ -4315,7 +4468,7 @@ function finRederive() {
   var s = finClone({ debits: FIN.confirmed.debits, lcs: FIN.confirmed.lcs, docs: FIN.confirmed.docs });
   s.parties = parties;
   FIN.queue.forEach(function(q){
-    try { var out = LCM.apply(s, q.op, { now: q.now }); LCM.refreshMirrors(s, out); q.dead = false; }
+    try { var out = LCM.apply(s, q.op, { now: q.now, user: (AUTH.user && AUTH.user.name) || '' }); LCM.refreshMirrors(s, out); q.dead = false; }
     catch (e) { q.dead = true; }
   });
   FIN.state = s;
@@ -4344,7 +4497,7 @@ function lcAction(op) {
   var now = new Date().toISOString();
   var work = finClone({ debits: FIN.state.debits, lcs: FIN.state.lcs, docs: FIN.state.docs });
   work.parties = FIN.state.parties;
-  try { var out = LCM.apply(work, op, { now: now }); LCM.refreshMirrors(work, out); }
+  try { var out = LCM.apply(work, op, { now: now, user: (AUTH.user && AUTH.user.name) || '' }); LCM.refreshMirrors(work, out); }
   catch (e) { return Promise.resolve({ ok: false, code: e.lcmCode || 'ERROR', message: e.message, data: e.lcmData }); }
   FIN.queue.push({ opId: newId('op'), op: op, now: now, tries: 0 });
   finRederive();
@@ -4502,6 +4655,11 @@ function renderBankNavCounts() {
   var set = function(k, n, warn){ var e = document.getElementById('cnt-' + k); if (e) { e.textContent = n; e.className = 'cnt' + (warn ? ' warn' : ''); } };
   set('opened', openedLcIds().length);
   set('atbank', allDocs('atbank').length);
+  (function(){
+    var ns = allDocs('atbank').filter(function(d){ return d.stop === 'yes'; }).length, host = document.getElementById('nav-bsub-atbank'), e = document.getElementById('cnt-stopped');
+    if (!e && host) { e = document.createElement('span'); e.id = 'cnt-stopped'; e.className = 'cnt stopcnt'; e.title = 'On stop acceptance'; host.appendChild(e); }
+    if (e) { e.textContent = ns || ''; e.style.display = ns ? '' : 'none'; }
+  })();
   var acc = allDocs('accepted');
   set('accepted', acc.length, acc.some(function(d){ return !d.maturityDate || d.maturityDate < todayISO(); }));
   set('history', allDocs('paid').length);
@@ -4564,7 +4722,7 @@ function renderBankStrip() {
   });
   document.getElementById('bs-rate').textContent = rate ? rate.toFixed(2) : 'not set';
   document.getElementById('bs-rate-src').textContent = FIN.rateSource === 'live' ? 'live' : 'saved';
-  document.getElementById('bs-rate-upd').textContent = FIN.ratesUpdated ? 'updated ' + formatRatesTimestamp(FIN.ratesUpdated) : 'refreshes daily at 6am';
+  document.getElementById('bs-rate-upd').textContent = FIN.ratesUpdated ? 'updated ' + formatRatesTimestamp(FIN.ratesUpdated) : 'refreshes daily';
 }
 
 function renderOpenedLCs() {
@@ -4578,7 +4736,7 @@ function renderOpenedLCs() {
       + '<td class="dm">' + (i + 1) + '</td>'
       + '<td class="dm">' + FD(l.date) + '</td>'
       + '<td class="mn" style="font-weight:700;font-size:13px;color:var(--tx)">' + esc(l.lcNo || '\u2014') + flagChip(id) + '<div style="font-family:inherit;font-size:10.5px;font-weight:500;color:var(--tx3)">' + esc(l.company || '') + '</div></td>'
-      + '<td style="font-weight:600;white-space:normal;min-width:96px">' + esc(l.supplier || '\u2014') + (l.remarks ? '<div style="font-size:10.5px;font-weight:400;color:var(--tx3)">' + esc(l.remarks) + '</div>' : '') + '</td>'
+      + '<td style="font-weight:600;white-space:normal;min-width:96px">' + esc(l.supplier || '\u2014') + (l.remarks ? '<div style="font-size:10.5px;font-weight:400;color:var(--tx3)">' + esc(l.remarks) + '</div>' : '') + (!isCom() && l.stop === 'yes' ? '<div style="font-size:10.5px;font-weight:700;color:var(--rd)">STOP ACCEPTANCE: ' + esc(l.stopNote || '') + '</div>' : '') + '</td>'
       + '<td class="cmp">' + (l.type ? '<span class="chip n">' + esc(l.type) + '</span>' : '\u2014') + '</td>'
       + '<td class="cmp" style="font-size:11px;white-space:normal">' + esc(l.buyerName || '\u2014') + '</td>'
       + '<td class="dm">' + FD(l.expiryDate) + '</td>'
@@ -4588,6 +4746,7 @@ function renderOpenedLCs() {
       + '<td class="col-party">' + partyTag(id) + '</td>'
       + '<td class="no-print act"><div class="aw">'
       + (isCom() ? '' : '<button class="btn bp bsm" onclick="openDocsArrived(\'' + jsq(id) + '\')">Docs arrived &rarr;</button>')
+      + (canStop() ? (l.stop === 'yes' ? '<button class="btn bp bsm" onclick="openResolveStopLC(\'' + jsq(id) + '\')">Dispute resolved</button>' : '<button class="btn bg bsm" onclick="openStopLC(\'' + jsq(id) + '\')" title="Stop acceptance for this LC (documents arriving later start stopped)">Stop acceptance</button>') : '')
       + '<button class="btn bed bsm" onclick="openEditBankLC(\'' + jsq(id) + '\')">Edit</button>'
       + (isAdmin() ? (lcFlag(id) ? '<button class="btn bdg bsm" onclick="openResolveFlag(\'' + jsq(id) + '\')" title="Resolve the hold / cancellation">&#9873;</button>' : '<button class="btn bg bsm" onclick="openFlag(\'' + jsq(id) + '\')" title="Mark: acceptance hold or cancellation applied">&#9873;</button>') : '')
       + (a.received > 0 && !isCom() ? '<button class="btn bg bsm" onclick="openCloseLC(\'' + jsq(id) + '\')" title="No more documents will come">Close LC</button>' : '')
@@ -4599,11 +4758,14 @@ function renderOpenedLCs() {
 }
 
 function renderAtBank() {
-  var docs = allDocs('atbank').sort(function(a, b){ return String(a.arrivedDate).localeCompare(String(b.arrivedDate)); });
+  var all = allDocs('atbank').sort(function(a, b){ return String(a.arrivedDate).localeCompare(String(b.arrivedDate)); });
+  var docs = all.filter(function(d){ return d.stop !== 'yes'; }), stopped = all.filter(function(d){ return d.stop === 'yes'; });
   var tb = document.getElementById('ab-tbody'), tot = 0, today = todayISO();
-  if (!docs.length) tb.innerHTML = '<tr><td colspan="12" style="text-align:center;color:var(--tx3);padding:24px">No documents are waiting at the bank.</td></tr>';
+  all.forEach(function(d){ tot += LCM.cents(d.usd); });
+  var pile = document.getElementById('ab-pile'); if (pile) pile.innerHTML = stopPileHtml(stopped);
+  if (!docs.length) tb.innerHTML = '<tr><td colspan="12" style="text-align:center;color:var(--tx3);padding:24px">' + (stopped.length ? 'Every document at the bank is on stop acceptance (above).' : 'No documents are waiting at the bank.') + '</td></tr>';
   else tb.innerHTML = docs.map(function(d, i){
-    var l = lcOf(d.bankLcId) || {}, a = aggOf(d.bankLcId), c = LCM.cents(d.usd); tot += c;
+    var l = lcOf(d.bankLcId) || {}, a = aggOf(d.bankLcId), c = LCM.cents(d.usd);
     var days = d.arrivedDate ? dayDiff(d.arrivedDate, today) : '';
     return '<tr id="dab-' + d.id + '"' + flagRowAttr(d.bankLcId) + '>'
       + '<td class="dm">' + (i + 1) + '</td>'
@@ -4619,6 +4781,7 @@ function renderAtBank() {
       + '<td class="dm" style="white-space:normal;max-width:150px">' + esc(d.remarks || '') + (d.dupOk ? ' <span class="chip a" title="Added although another document has the same amount">same amount</span>' : '') + '</td>'
       + '<td class="no-print act"><div class="aw">'
       + '<button class="btn bp bsm" onclick="openAccept(\'' + jsq(d.bankLcId) + '\',\'' + jsq(d.id) + '\')">Give acceptance &rarr;</button>'
+      + (canStop() ? '<button class="btn bg bsm" onclick="openStopDoc(\'' + jsq(d.id) + '\')" title="Keep this document in the dispute pile">Stop acceptance</button>' : '')
       + '<button class="btn bed bsm" onclick="openEditDoc(\'' + jsq(d.id) + '\')">Edit</button>'
       + '<button class="btn bdg bsm" onclick="undoDoc(\'' + jsq(d.id) + '\')" title="Remove this document (PIN)">Undo</button>'
       + '</div></td></tr>';
@@ -4836,9 +4999,14 @@ function pickSum() {
 }
 async function pickGo() { if (_pick) await _pick.go(pickedIds()); }
 
-function openAccept(lcId, docId) {
+async function openAccept(lcId, docId) {
   var l = lcOf(lcId), docs = docsOf(lcId, 'atbank');
   if (!docs.length) { showAlert('No documents of LC ' + (l ? l.lcNo : '') + ' are at the bank. Record the documents first.'); return; }
+  var stoppedDocs = docs.filter(function(d){ return d.stop === 'yes'; });
+  docs = docs.filter(function(d){ return d.stop !== 'yes'; });
+  if (!docs.length) { showAlert('Every document of LC ' + l.lcNo + ' at the bank is on STOP ACCEPTANCE (' + stoppedDocs.map(function(d){ return docStopLabel(d); }).join('; ') + ').\n\nMark the dispute resolved first.', 'Stop acceptance'); return; }
+  if (docId && stoppedDocs.some(function(d){ return d.id === docId; })) docId = '';
+  if (stoppedDocs.length && !await showConfirm('LC ' + l.lcNo + ' has ' + stoppedDocs.length + ' document' + (stoppedDocs.length === 1 ? '' : 's') + ' on STOP ACCEPTANCE (' + stoppedDocs.map(function(d){ return UC(LCM.cents(d.usd)) + ': ' + docStopLabel(d); }).join('; ') + ').\n\nYou are accepting a different document of the same LC. Continue?', 'Stop acceptance on this LC', 'Continue')) return;
   openPicker({
     title: 'Give acceptance \u2014 LC ' + l.lcNo, info: lcInfoBox(lcId), docs: docs,
     checked: docId ? [docId] : docs.map(function(d){ return d.id; }),
@@ -5434,7 +5602,7 @@ function printBanking() {
     var ab = allDocs('atbank').filter(function(d){ return inCo(d.bankLcId); }).sort(function(a, b){ return String(a.arrivedDate).localeCompare(String(b.arrivedDate)); }), tA = 0;
     var bodyAb = ab.map(function(d, i){
       var l = lcOf(d.bankLcId) || {}, c = LCM.cents(d.usd); tA += c;
-      return '<tr><td class="c">' + (i + 1) + '</td>' + coTd(l) + '<td class="l b nw">' + esc(docLcNo(d)) + '</td><td class="l">' + esc(l.supplier || '\u2014') + '</td><td class="c">' + FDP(d.arrivedDate) + '</td><td class="r">' + (d.arrivedDate ? dayDiff(d.arrivedDate, today) : '\u2014') + '</td><td class="r b">' + UC(c) + '</td><td class="r">' + TKp(c) + '</td>' + ptTd(d.bankLcId) + '</tr>';
+      return '<tr><td class="c">' + (i + 1) + '</td>' + coTd(l) + '<td class="l b nw">' + esc(docLcNo(d)) + (d.stop === 'yes' ? ' <span style="color:#b3261e;font-weight:700">STOP ACCEPTANCE</span>' : '') + '</td><td class="l">' + esc(l.supplier || '\u2014') + '</td><td class="c">' + FDP(d.arrivedDate) + '</td><td class="r">' + (d.arrivedDate ? dayDiff(d.arrivedDate, today) : '\u2014') + '</td><td class="r b">' + UC(c) + '</td><td class="r">' + TKp(c) + '</td>' + ptTd(d.bankLcId) + '</tr>';
     }).join('') || '<tr><td colspan="10" class="c" style="color:#86868b;padding:14px">No documents at the bank</td></tr>';
     html += '<div class="block-title">Documents at Bank \u2014 acceptance not given yet</div><table><thead><tr><th>#</th>' + coTh + '<th>LC No.</th><th>Supplier</th><th>Arrived</th><th class="r">Days</th><th class="r">USD</th><th class="r">BDT</th>' + ptTh + '</tr></thead><tbody>' + bodyAb + '</tbody>'
       + '<tfoot><tr class="total"><td class="r" colspan="' + (5 + (both ? 1 : 0)) + '">Total</td><td class="r">' + UC(tA) + '</td><td class="r">' + TKp(tA) + '</td>' + (showParty ? '<td></td>' : '') + '</tr></tfoot></table>';
@@ -5474,7 +5642,7 @@ function printBanking() {
     + 'tr.month td{background:#F4F3EE;font-weight:700;font-size:10px;padding:6px 5px;border-top:1.5px solid #d8d5c8}tr.month .mt{float:right;color:#8a5a1f}'
     + 'tr.total td{background:#FBF4EF;font-weight:700;border-top:1.5px solid #CC785C;border-bottom:1.5px solid #CC785C;font-size:10px}'
     + '.ft{margin-top:12px;padding-top:6px;border-top:1px solid #E8DFD5;font-size:8px;color:#86868b;display:flex;justify-content:space-between}'
-    + '@page{size:A4 landscape;margin:10mm}@media print{body{padding:0}thead{display:table-header-group}tr{page-break-inside:avoid;break-inside:avoid}tr.month{page-break-after:avoid;break-after:avoid}tr.total{page-break-before:avoid;break-before:avoid}}'
+    + '@page{size:A4 landscape;margin:16mm 16mm 20mm 16mm;@bottom-left{content:"Banking - LC Position";font:8px Helvetica,Arial,sans-serif;color:#86868b}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:8px Helvetica,Arial,sans-serif;color:#86868b}}@media print{body{padding:0!important}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}tfoot{display:table-row-group}tr.total{break-inside:avoid}.block-title{break-after:avoid;page-break-after:avoid}tr.month{break-after:avoid}td.l:nth-child(2){white-space:nowrap}tbody td{padding:5px 6px!important}.combined-box{break-inside:avoid}.ft{display:none}}@media print{body{padding:0}thead{display:table-header-group}tr{page-break-inside:avoid;break-inside:avoid}tr.month{page-break-after:avoid;break-after:avoid}tr.total{page-break-before:avoid;break-before:avoid}}'
     + '</style></head><body><div class="hdr"><div class="company">' + esc(printName) + '</div><div class="title">Banking \u2014 LC Position</div>'
     + '<div class="meta">As of ' + FDP(today) + ' &middot; BDT at \u09f3' + rate.toFixed(2) + ' per USD (live rate)</div></div>'
     + summary + html + '<div class="ft"><span>Generated: ' + FDP(today) + '</span><span>' + esc(printName) + ' \u2014 Banking</span></div></body></html>';
@@ -5521,7 +5689,7 @@ async function restoreBackup(id, name) {
   if (!await checkPin()) return;
   if (!await showConfirm('Restore "' + name + '"?\n\nEvery module goes back to how it was at that time. A "before restore" backup of the current data is made first.', 'Restore backup', 'Restore')) return;
   showSync('saving', 'Restoring...');
-  try { await api('restoreBackup', { fileId: id, pin: '388' }); }
+  try { await api('restoreBackup', { fileId: id, pin: '' }); }
   catch (e) { showSync('err', 'Restore failed'); showAlert('Restore failed: ' + e.message); return; }
   clearFinCaches();
   showSync('ok', 'Restored');
@@ -5543,7 +5711,7 @@ async function undoConversion() {
   if (!await checkPin()) return;
   if (!await showConfirm('Undo the LC upgrade?\n\nThe old BANK_LCS, DEBITS, acceptance and paid-bill tabs are put back, so the old app works again. LC changes made since the upgrade are kept only in the copies BANK_LCS_CONVERTED\u2026 and LC_DOCS_ROLLEDBACK\u2026.', 'Undo the LC upgrade', 'Undo upgrade')) return;
   showSync('saving', 'Undoing the upgrade...');
-  try { var r = await api('rollbackConversion', { pin: '388' }); }
+  try { var r = await api('rollbackConversion', { pin: '' }); }
   catch (e) { showSync('err', 'Failed'); showAlert(e.message); return; }
   clearFinCaches();
   await showAlert('The upgrade was undone. Open the old app to continue as before.', 'Done');
@@ -5606,7 +5774,7 @@ async function convertNowClick() {
   showSync('saving', 'Converting...');
   document.getElementById('conv-go').disabled = true;
   try {
-    var r = await finPost({ action: 'convertNow', pin: '388' });
+    var r = await finPost({ action: 'convertNow', pin: '' });
     if (r.error) { showSync('err', 'Not converted'); if (r.report) { _convReport = r.report; renderConversionReport(); } showAlert(r.error, 'Not converted'); return; }
   } catch (e) { showSync('err', 'Not converted'); showAlert('No answer from the server: ' + e.message + '\n\nRun the check again to see whether the conversion happened.'); return; }
   clearFinCaches();
@@ -5698,8 +5866,9 @@ var ALERT_RULES = {
   noaccept: { days: 30, label: 'Acceptance not given',  help: 'Documents at the bank for over 30 days without acceptance' },
   expiring: { days: 15, label: 'Expiring',              help: 'LC expires within 15 days (or has expired) and documents are still waiting' },
   matured:  { days: 0,  label: 'Matured, not paid',     help: 'Past the maturity date and not marked paid' },
+  stopped:  { days: 0,  label: 'Stop acceptance',       help: 'Documents kept on stop acceptance until the dispute is resolved' },
 };
-var ALERT_ORDER = ['matured', 'expiring', 'noaccept', 'nodocs', 'stalled'];
+var ALERT_ORDER = ['stopped', 'matured', 'expiring', 'noaccept', 'nodocs', 'stalled'];
 function alertSnoozed(key) { var u = (FIN.alertSnooze || {})[key]; return u && u >= todayISO(); }
 function computeAlerts(includeSnoozed) {
   if (!FIN.idx || FIN.legacy || isCom()) return [];
@@ -5730,7 +5899,11 @@ function computeAlerts(includeSnoozed) {
       }
     }
     a.docs.forEach(function(d){
-      if (d.status === 'atbank' && !flagged && d.arrivedDate) {
+      if (d.status === 'atbank' && d.stop === 'yes') {
+        var d6 = dayDiff(d.stopDate || d.arrivedDate, today);
+        add('stopped', id, d.id, d6, 'Document of ' + UC(LCM.cents(d.usd)) + ' on stop acceptance for ' + d6 + ' day' + (d6 === 1 ? '' : 's') + ': ' + docStopLabel(d));
+      }
+      if (d.status === 'atbank' && d.stop !== 'yes' && !flagged && d.arrivedDate) {
         var d3 = dayDiff(d.arrivedDate, today);
         if (d3 > ALERT_RULES.noaccept.days) add('noaccept', id, d.id, d3, 'Document of ' + UC(LCM.cents(d.usd)) + ' at the bank for ' + d3 + ' days (arrived ' + FD(d.arrivedDate) + ')');
       }
@@ -5772,7 +5945,7 @@ function renderAlerts() {
 }
 async function alertGo(key) {
   var x = computeAlerts(true).find(function(y){ return y.key === key; }); if (!x) return;
-  if (x.rule === 'noaccept') { await navigate('banking', 'atbank'); scrollAndHighlight('dab-' + x.docId); }
+  if (x.rule === 'noaccept' || x.rule === 'stopped') { await navigate('banking', 'atbank'); scrollAndHighlight('dab-' + x.docId); }
   else if (x.rule === 'matured') { await navigate('banking', 'accepted'); scrollAndHighlight('acc-' + x.docId); }
   else openLcDocs(x.lcId);
 }
@@ -5792,7 +5965,7 @@ var FLAG_LABEL = { hold: 'Acceptance hold', cancel: 'Cancellation applied' };
 var FLAG_SHORT = { hold: 'HOLD', cancel: 'CANCELLATION' };
 var OUTCOME_LABEL = { lifted: 'Hold lifted', approved: 'Cancellation approved', refused: 'Cancellation refused' };
 function lcFlag(lcId) { var l = lcOf(lcId); return l && !isCom() ? String(l.flag || '') : ''; }
-function flagChip(lcId) { var f = lcFlag(lcId); return f ? ' <span class="chip flagchip">' + FLAG_SHORT[f] + '</span>' : ''; }
+function flagChip(lcId) { var f = lcFlag(lcId), l = lcOf(lcId); return (f ? ' <span class="chip flagchip">' + FLAG_SHORT[f] + '</span>' : '') + (l && !isCom() && l.stop === 'yes' ? ' <span class="chip stopchip" title="' + esc(l.stopNote || '') + '">STOP</span>' : ''); }
 function flagRowAttr(lcId) { return lcFlag(lcId) ? ' class="flagged"' : ''; }
 function flaggedIds() { return isCom() || !FIN.idx ? [] : Object.keys(FIN.state.lcs).filter(function(id){ return !!FIN.state.lcs[id].flag; }); }
 function flagHistoryAll() {
@@ -6602,7 +6775,7 @@ function printLoanTable(type, coKey) {
   html += 'tr:nth-child(even) td{background:#FCFBFA}';
   html += 'tr.total td{background:#FBF4EF;font-weight:700;border-top:2px solid #CC785C;border-bottom:2px solid #CC785C;font-size:11.5px}';
   html += '.ft{margin-top:16px;padding-top:8px;border-top:1px solid #E8DFD5;font-size:8.5px;color:#86868b;display:flex;justify-content:space-between}';
-  html += '@page{size:A4 portrait;margin:16mm 15mm 28mm 15mm}';
+  html += '@page{size:A4 portrait;margin:16mm 16mm 20mm 16mm;@bottom-left{content:"Loans";font:8px Helvetica,Arial,sans-serif;color:#86868b}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:8px Helvetica,Arial,sans-serif;color:#86868b}}@media print{body{padding:0!important}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}tfoot{display:table-row-group}tr.total{break-inside:avoid}}';
   html += '@media print{body{padding:0}thead{display:table-header-group}tr{page-break-inside:avoid;break-inside:avoid}tr.total{page-break-before:avoid;break-before:avoid}}';
   html += '</style></head><body>';
   html += '<div class="hdr"><div class="company">' + esc(printName) + '</div>';
@@ -6730,7 +6903,7 @@ function printAllLoans() {
   html += 'tr.total td{background:#FBF4EF;font-weight:700;border-top:1.5px solid #CC785C;border-bottom:1.5px solid #CC785C;font-size:10.5px}';
   html += '.company-section{margin-bottom:10px}';
   html += '.ft{margin-top:14px;padding-top:8px;border-top:1px solid #E8DFD5;font-size:8px;color:#86868b;display:flex;justify-content:space-between}';
-  html += '@page{size:A4 portrait;margin:16mm 15mm 28mm 15mm}';
+  html += '@page{size:A4 portrait;margin:16mm 16mm 20mm 16mm;@bottom-left{content:"Loans";font:8px Helvetica,Arial,sans-serif;color:#86868b}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:8px Helvetica,Arial,sans-serif;color:#86868b}}@media print{body{padding:0!important}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}tfoot{display:table-row-group}tr.total{break-inside:avoid}}';
   html += '@media print{body{padding:0}thead{display:table-header-group}tr{page-break-inside:avoid;break-inside:avoid}tr.total{page-break-before:avoid;break-before:avoid}.pagebreak{page-break-before:always;break-before:page}}';
   html += '</style></head><body>';
   html += '<div class="hdr"><div class="company">' + esc(GROUP_PRINT_NAME) + '</div>';
@@ -7626,7 +7799,7 @@ function buildCreditorPrintHTML(title, headHtml, bodyHtml, total, today, FDP, is
   html += 'tr:nth-child(even) td{background:#FCFBFA}';
   html += 'tr.total td{background:#FBF4EF;font-weight:700;border-top:2px solid #CC785C;border-bottom:2px solid #CC785C;font-size:11.5px}';
   html += '.ft{margin-top:16px;padding-top:8px;border-top:1px solid #E8DFD5;font-size:8.5px;color:#86868b;display:flex;justify-content:space-between}';
-  html += '@page{size:A4 portrait;margin:16mm 15mm 18mm 15mm}';
+  html += '@page{size:A4 portrait;margin:16mm 16mm 20mm 16mm;@bottom-left{content:"Creditors";font:8px Helvetica,Arial,sans-serif;color:#86868b}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:8px Helvetica,Arial,sans-serif;color:#86868b}}@media print{body{padding:0!important}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}tfoot{display:table-row-group}tr.total{break-inside:avoid}}';
   html += '@media print{body{padding:0}thead{display:table-header-group}tr{page-break-inside:avoid;break-inside:avoid}tr.total{page-break-before:avoid;break-before:avoid}}';
   html += '</style></head><body>';
   html += '<div class="hdr"><div class="company">' + esc(GROUP_PRINT_NAME) + '</div>';
@@ -7699,7 +7872,7 @@ function printAllCreditors() {
   html += 'tr:nth-child(even) td{background:#FCFBFA}';
   html += 'tr.total td{background:#FBF4EF;font-weight:700;border-top:1.5px solid #CC785C;border-bottom:1.5px solid #CC785C;font-size:10.5px}';
   html += '.ft{margin-top:14px;padding-top:8px;border-top:1px solid #E8DFD5;font-size:8px;color:#86868b;display:flex;justify-content:space-between}';
-  html += '@page{size:A4 portrait;margin:16mm 15mm 18mm 15mm}';
+  html += '@page{size:A4 portrait;margin:16mm 16mm 20mm 16mm;@bottom-left{content:"Creditors";font:8px Helvetica,Arial,sans-serif;color:#86868b}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:8px Helvetica,Arial,sans-serif;color:#86868b}}@media print{body{padding:0!important}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}tfoot{display:table-row-group}tr.total{break-inside:avoid}}';
   html += '@media print{body{padding:0}thead{display:table-header-group}tr{page-break-inside:avoid;break-inside:avoid}tr.total{page-break-before:avoid;break-before:avoid}.pagebreak{page-break-before:always;break-before:page}}';
   html += '</style></head><body>';
   html += '<div class="hdr"><div class="company">' + esc(GROUP_PRINT_NAME) + '</div>';
@@ -8136,7 +8309,7 @@ function printLiability() {
   html += 'tr:nth-child(even) td{background:#FCFBFA}';
   html += 'tr.total td{background:#FBF4EF;font-weight:700;border-top:2px solid #CC785C;border-bottom:2px solid #CC785C;font-size:11.5px}';
   html += '.ft{margin-top:16px;padding-top:8px;border-top:1px solid #E8DFD5;font-size:8.5px;color:#86868b;display:flex;justify-content:space-between}';
-  html += '@page{size:A4 portrait;margin:16mm 15mm 18mm 15mm}';
+  html += '@page{size:A4 portrait;margin:16mm 16mm 20mm 16mm;@bottom-left{content:"Liability";font:8px Helvetica,Arial,sans-serif;color:#86868b}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:8px Helvetica,Arial,sans-serif;color:#86868b}}@media print{body{padding:0!important}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}tfoot{display:table-row-group}tr.total{break-inside:avoid}}';
   html += '@media print{body{padding:0}thead{display:table-header-group}tr{page-break-inside:avoid;break-inside:avoid}tr.total{page-break-before:avoid;break-before:avoid}}';
   html += '</style></head><body>';
   html += '<div class="hdr"><div class="company">' + esc(GROUP_PRINT_NAME) + '</div>';
@@ -8230,7 +8403,7 @@ function printDashboardSummary(mode) {
   html += 'tr:nth-child(even) td{background:#FCFBFA}';
   html += 'tr.total td{background:#FBF4EF;font-weight:700;border-top:2px solid #CC785C;border-bottom:2px solid #CC785C;font-size:11.5px}';
   html += '.ft{margin-top:16px;padding-top:8px;border-top:1px solid #E8DFD5;font-size:8.5px;color:#86868b;display:flex;justify-content:space-between}';
-  html += '@page{size:A4 portrait;margin:16mm 15mm 18mm 15mm}';
+  html += '@page{size:A4 portrait;margin:16mm 16mm 20mm 16mm;@bottom-left{content:"Summary";font:8px Helvetica,Arial,sans-serif;color:#86868b}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:8px Helvetica,Arial,sans-serif;color:#86868b}}@media print{body{padding:0!important}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}tfoot{display:table-row-group}tr.total{break-inside:avoid}}';
   html += '@media print{body{padding:0}thead{display:table-header-group}tr{page-break-inside:avoid;break-inside:avoid}tr.total{page-break-before:avoid;break-before:avoid}}';
   html += '</style></head><body>';
   html += '<div class="hdr"><div class="company">' + esc(PRINT_COMPANY_NAME) + '</div>';
@@ -8383,6 +8556,416 @@ var FLOAT = (function(){
   return { update: schedule };
 })();
 
+// ═══ SECTION: ADMIN PANEL, STOP ACCEPTANCE, UD, DAILY RATES (Supabase release) ═══
+function $$(id) { return document.getElementById(id); }
+function plainText(h) { var t = document.createElement('div'); t.innerHTML = String(h == null ? '' : h); return t.textContent || ''; }
+function admText(x) { var t = plainText(x.description).replace(/^\[\]\s*/, ''); if (x.who && t.indexOf(x.who + ': ') === 0) t = t.slice(x.who.length + 2); return t.replace(/^\[\]\s*/, ''); }
+function dhakaStamp(iso) {
+  if (!iso) return '';
+  var d = new Date(iso); if (isNaN(d.getTime())) return '';
+  try { return d.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true }); }
+  catch (e) { return formatRatesTimestamp(iso); }
+}
+
+// ───────── Admin panel ─────────
+var ADM = { tab: 'activity', users: [], names: [], modules: ['Banking', 'Cash LC', 'Loans', 'FDR', 'Creditors', 'Liability', 'Users', 'Security'], act: { who: '', module: '', from: '', to: '', offset: 0, total: 0, rows: [] }, go: null };
+var ADM_PAGE = 100;
+
+function admTab(t) {
+  ADM.tab = t;
+  Array.prototype.forEach.call(document.querySelectorAll('#adm-tabs .tab'), function (e) { e.classList.toggle('active', e.getAttribute('data-t') === t); });
+  admRender();
+}
+async function admRender() {
+  var b = $$('adm-body'); if (!b || !isAdmin()) return;
+  b.innerHTML = '<div class="adm-mut" style="padding:20px">Loading&hellip;</div>';
+  try {
+    if (ADM.tab === 'activity') await admActivity();
+    else if (ADM.tab === 'users') await admUsers();
+    else if (ADM.tab === 'pins') await admPins();
+    else if (ADM.tab === 'backups') await admBackups();
+    else if (ADM.tab === 'rates') await admRates();
+  } catch (e) { b.innerHTML = '<div class="adm-warn">' + esc(e.message || 'Could not load.') + '</div>'; }
+}
+
+// generic small modal
+function admOpen(title, html, goLabel, goFn, danger) {
+  $$('adm-m-title').textContent = title;
+  $$('adm-m-body').innerHTML = html;
+  var g = $$('adm-m-go'); g.textContent = goLabel || 'Save'; g.className = 'btn ' + (danger ? 'bdg' : 'bp');
+  ADM.go = goFn;
+  om('m-adm');
+  setTimeout(function () { var i = $$('adm-m-body').querySelector('input,select'); if (i) i.focus(); }, 120);
+}
+async function admModalGo() { if (ADM.go) await ADM.go(); }
+var ADM_ENTER = ' onkeydown="if(event.key===\'Enter\'){event.preventDefault();document.getElementById(\'adm-m-go\').click();}"';
+
+// ── Activity ──
+async function admActivity() {
+  var a = ADM.act;
+  if (!ADM.names.length) { try { var u = await api('listUsers'); ADM.users = u.users || []; ADM.names = ADM.users.map(function (x) { return x.name; }); } catch (e) {} }
+  var r = await api('adminActivity', { who: a.who, module: a.module, from: a.from, to: a.to, limit: ADM_PAGE, offset: a.offset });
+  a.rows = r.rows || []; a.total = r.total || 0;
+  a.rows.forEach(function (x) { if (x.module && ADM.modules.indexOf(x.module) < 0) ADM.modules.push(x.module); if (x.who && ADM.names.indexOf(x.who) < 0) ADM.names.push(x.who); });
+  var opt = function (list, cur, all) { return '<option value="">' + all + '</option>' + list.map(function (n) { return '<option value="' + esc(n) + '"' + (n === cur ? ' selected' : '') + '>' + esc(n) + '</option>'; }).join(''); };
+  var html = '<div class="adm-card"><div class="adm-row">'
+    + '<div class="fg"><label>Person</label><select id="ac-who" onchange="admActFilter()">' + opt(ADM.names, a.who, 'Everyone') + '</select></div>'
+    + '<div class="fg"><label>Module</label><select id="ac-mod" onchange="admActFilter()">' + opt(ADM.modules, a.module, 'All modules') + '</select></div>'
+    + '<div class="fg"><label>From</label><input type="date" id="ac-from" value="' + esc(a.from) + '" onchange="admActFilter()"></div>'
+    + '<div class="fg"><label>To</label><input type="date" id="ac-to" value="' + esc(a.to) + '" onchange="admActFilter()"></div>'
+    + '<div class="fg" style="flex:0"><button class="btn bg bsm" onclick="admActClear()">Clear</button></div>'
+    + '<div class="fg" style="flex:0"><button class="btn bp bsm" onclick="admActCsv()">Download CSV</button></div>'
+    + '</div><div class="adm-sub" style="margin:10px 0 0">The last 12 months are kept. ' + a.total + ' entr' + (a.total === 1 ? 'y' : 'ies') + ' match.</div></div>';
+  var rows = a.rows.map(function (x) {
+    return '<tr><td style="white-space:nowrap">' + esc(dhakaStamp(x.ts)) + '</td><td style="font-weight:600">' + esc(x.who || '\u2014') + '</td><td>' + (x.module ? '<span class="adm-pill n">' + esc(x.module) + '</span>' : '') + '</td><td style="white-space:normal">' + esc(admText(x)) + '</td></tr>';
+  }).join('') || '<tr><td colspan="4" class="adm-mut" style="text-align:center;padding:24px">Nothing found.</td></tr>';
+  var pg = '<div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">'
+    + '<button class="btn bg bsm"' + (a.offset <= 0 ? ' disabled' : '') + ' onclick="admActPage(-1)">&larr; Newer</button>'
+    + '<span class="adm-mut">' + (a.total ? (a.offset + 1) + '&ndash;' + Math.min(a.offset + ADM_PAGE, a.total) + ' of ' + a.total : '') + '</span>'
+    + '<button class="btn bg bsm"' + (a.offset + ADM_PAGE >= a.total ? ' disabled' : '') + ' onclick="admActPage(1)">Older &rarr;</button></div>';
+  $$('adm-body').innerHTML = html + '<div class="adm-card" style="padding:6px 6px 14px"><div class="tw"><table class="adm-table"><thead><tr><th>When (Dhaka)</th><th>Who</th><th>Module</th><th>What</th></tr></thead><tbody>' + rows + '</tbody></table></div>' + pg + '</div>';
+}
+function admActFilter() {
+  var a = ADM.act; a.who = $$('ac-who').value; a.module = $$('ac-mod').value; a.from = $$('ac-from').value; a.to = $$('ac-to').value; a.offset = 0; admRender();
+}
+function admActClear() { ADM.act.who = ''; ADM.act.module = ''; ADM.act.from = ''; ADM.act.to = ''; ADM.act.offset = 0; admRender(); }
+function admActPage(dir) { ADM.act.offset = Math.max(0, ADM.act.offset + dir * ADM_PAGE); admRender(); }
+async function admActCsv() {
+  var a = ADM.act, all = [], off = 0;
+  showSync('saving', 'Preparing the file...');
+  try {
+    while (off < 20000) {
+      var r = await api('adminActivity', { who: a.who, module: a.module, from: a.from, to: a.to, limit: 500, offset: off });
+      all = all.concat(r.rows || []); off += 500;
+      if (!r.rows || r.rows.length < 500) break;
+    }
+    var q = function (v) { return '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"'; };
+    var csv = 'When (Dhaka),Who,Module,What\r\n' + all.map(function (x) { return [q(dhakaStamp(x.ts)), q(x.who), q(x.module), q(admText(x))].join(','); }).join('\r\n');
+    var blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' }), url = URL.createObjectURL(blob), l = document.createElement('a');
+    l.href = url; l.download = 'activity-' + todayISO() + '.csv'; document.body.appendChild(l); l.click(); document.body.removeChild(l); URL.revokeObjectURL(url);
+    showSync('ok', 'Downloaded ' + all.length + ' rows');
+  } catch (e) { showSync('err', 'Download failed'); showAlert(e.message || 'Download failed'); }
+}
+
+// ── Users ──
+var ADM_TIERS = { md: 'Management', commercial: 'Commercial' };
+async function admUsers() {
+  var r = await api('listUsers'); ADM.users = r.users || []; ADM.names = ADM.users.map(function (x) { return x.name; });
+  var rank = { admin: 0, md: 1, commercial: 2 };
+  var list = ADM.users.slice().sort(function (a, b) { return (rank[a.role] - rank[b.role]) || a.name.localeCompare(b.name); });
+  var rows = list.map(function (u) {
+    var id = jsq(u.id), me = u.role === 'admin';
+    var acts = me ? '<a onclick="admPassword(\'' + id + '\')">Change my password</a>'
+      : '<a onclick="admTier(\'' + id + '\')">Change tier</a><a onclick="admPassword(\'' + id + '\')">Reset password</a>'
+        + '<a onclick="admRename(\'' + id + '\')">Rename</a>'
+        + (u.active ? '<a onclick="admActive(\'' + id + '\',false)">Deactivate</a>' : '<a onclick="admActive(\'' + id + '\',true)">Reactivate</a>')
+        + '<a class="d" onclick="admDelete(\'' + id + '\')">Delete</a>';
+    return '<tr><td style="font-weight:600">' + esc(u.name) + '</td><td><span class="adm-pill ' + (me ? 'b' : u.role === 'md' ? 'g' : 'a') + '">' + esc(u.roleName) + '</span></td>'
+      + '<td>' + (u.active ? '<span class="adm-pill g">Active</span>' : '<span class="adm-pill r">Deactivated</span>') + '</td>'
+      + '<td class="adm-mut">' + (u.lastLogin ? esc(dhakaStamp(u.lastLogin)) : 'never') + '</td><td class="adm-acts">' + acts + '</td></tr>';
+  }).join('');
+  $$('adm-body').innerHTML = '<div class="adm-card"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><div><h3>People who can sign in</h3><div class="adm-sub" style="margin:0">There is one Admin. You can add any number of Management and Commercial users. Only you set or change passwords.</div></div><button class="btn bp bsm" onclick="admAddUser()">+ Add user</button></div></div>'
+    + '<div class="adm-card" style="padding:6px 6px 10px"><div class="tw"><table class="adm-table"><thead><tr><th>Name</th><th>Tier</th><th>Status</th><th>Last sign-in</th><th>Actions</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>';
+}
+function admUser(id) { return ADM.users.filter(function (u) { return u.id === id; })[0]; }
+function admTierSelect(cur) { return '<select id="au-role"><option value="md"' + (cur === 'md' ? ' selected' : '') + '>Management</option><option value="commercial"' + (cur === 'commercial' ? ' selected' : '') + '>Commercial</option></select>'; }
+async function admSaveUser(body, done) {
+  try { var r = await api('saveUser', body); cm('m-adm'); showSync('ok', done); ADM.users = r.users || ADM.users; if (ADM.tab === 'users') admUsers(); if (typeof loadLoginUsers === 'function') ADM.names = []; }
+  catch (e) { showAlert(e.message, 'Not saved'); }
+}
+function admAddUser() {
+  admOpen('Add user', '<div class="mfg"><label>Name (shown on the sign-in screen)</label><input type="text" id="au-name"' + ADM_ENTER + '></div>'
+    + '<div class="mfg"><label>Tier</label>' + admTierSelect('commercial') + '</div>'
+    + '<div class="mfg"><label>Password (at least 8 characters)</label><input type="text" id="au-pw" autocomplete="off"' + ADM_ENTER + '></div>', 'Add user', function () {
+    var name = $$('au-name').value.trim(), pw = $$('au-pw').value;
+    if (!name) { showAlert('Enter a name.'); return; }
+    if (pw.length < 8) { showAlert('The password must have at least 8 characters.'); return; }
+    return admSaveUser({ action: 'saveUser', name: name, role: $$('au-role').value, password: pw }, 'User added');
+  });
+}
+function admTier(id) {
+  var u = admUser(id); if (!u) return;
+  admOpen('Change tier \u2014 ' + u.name, '<div class="mfg"><label>Tier</label>' + admTierSelect(u.role) + '</div><div class="adm-sub">Takes effect the next time this person signs in or opens a page.</div>', 'Save', function () {
+    return admSaveUser({ action: 'saveUser', id: id, role: $$('au-role').value }, 'Tier changed');
+  });
+}
+function admRename(id) {
+  var u = admUser(id); if (!u) return;
+  admOpen('Rename \u2014 ' + u.name, '<div class="mfg"><label>Name</label><input type="text" id="au-name" value="' + esc(u.name) + '"' + ADM_ENTER + '></div>', 'Save', function () {
+    var n = $$('au-name').value.trim(); if (!n) { showAlert('Enter a name.'); return; }
+    return admSaveUser({ action: 'saveUser', id: id, name: n }, 'Renamed');
+  });
+}
+function admPassword(id) {
+  var u = admUser(id); if (!u) return;
+  admOpen((u.role === 'admin' ? 'Change my password' : 'Reset password \u2014 ' + u.name), '<div class="mfg"><label>New password (at least 8 characters)</label><input type="text" id="au-pw" autocomplete="off"' + ADM_ENTER + '></div>', 'Save', function () {
+    var pw = $$('au-pw').value; if (pw.length < 8) { showAlert('The password must have at least 8 characters.'); return; }
+    return admSaveUser({ action: 'saveUser', id: id, password: pw }, 'Password changed');
+  });
+}
+async function admActive(id, on) {
+  var u = admUser(id); if (!u) return;
+  if (!on && !await showConfirm(u.name + ' will not be able to sign in. Their history stays. You can reactivate them any time.', 'Deactivate ' + u.name + '?', 'Deactivate')) return;
+  return admSaveUser({ action: 'saveUser', id: id, active: on }, on ? 'Reactivated' : 'Deactivated');
+}
+function admDelete(id) {
+  var u = admUser(id); if (!u) return;
+  admOpen('Delete ' + u.name, '<div class="adm-sub" style="color:var(--rd);font-weight:600">This cannot be undone. Their old entries stay in the Activity log by name.</div><div class="mfg"><label>Type the name <b>' + esc(u.name) + '</b> to confirm</label><input type="text" id="au-confirm" autocomplete="off"' + ADM_ENTER + '></div>', 'Delete user', async function () {
+    if ($$('au-confirm').value.trim().toLowerCase() !== u.name.toLowerCase()) { showAlert('The name does not match. Nothing was deleted.'); return; }
+    try { var r = await api('deleteUser', { id: id }); cm('m-adm'); ADM.users = r.users || ADM.users; showSync('ok', 'User deleted'); admUsers(); }
+    catch (e) { showAlert(e.message, 'Not deleted'); }
+  }, true);
+}
+
+// ── PINs ──
+async function admPins() {
+  var r = await api('pinsInfo'), p = r.pins || {};
+  var card = function (kind, title, what) {
+    return '<div class="adm-card"><h3>' + title + '</h3><div class="adm-sub">' + what + '</div><div class="adm-mut" style="margin-bottom:12px">Last changed: ' + (p[kind] ? esc(dhakaStamp(p[kind])) : 'never') + '</div><button class="btn bp bsm" onclick="admPinChange(\'' + kind + '\')">Change PIN</button></div>';
+  };
+  $$('adm-body').innerHTML = '<div class="adm-warn">PINs are for Management only. You (Admin) never need a PIN. After 5 wrong tries a person is locked out for 15 minutes and it is written in the Activity log.</div>'
+    + '<div class="adm-grid">'
+    + card('action', 'Action PIN', 'Asked from Management for sensitive actions: undo, delete, remove acceptance, stop acceptance, bank limit, and so on.')
+    + card('cash', 'Cash LC PIN', 'Asked from Management when opening the Cash LC section.') + '</div>'
+    + '<div class="adm-sub">PINs are stored scrambled (hashed) in the database. Nobody, including you, can read them back; you can only set a new one.</div>';
+}
+function admPinChange(kind) {
+  admOpen('Change ' + (kind === 'cash' ? 'Cash LC PIN' : 'Action PIN'), '<div class="mfg"><label>New PIN (4 to 8 digits)</label><input type="password" id="ap-new" inputmode="numeric" maxlength="8" autocomplete="off"' + ADM_ENTER + '></div>'
+    + '<div class="mfg"><label>New PIN again</label><input type="password" id="ap-new2" inputmode="numeric" maxlength="8" autocomplete="off"' + ADM_ENTER + '></div>'
+    + '<div class="mfg"><label>Your Admin password</label><input type="password" id="ap-pw" autocomplete="current-password"' + ADM_ENTER + '></div>', 'Change PIN', async function () {
+    var a = $$('ap-new').value, b = $$('ap-new2').value, pw = $$('ap-pw').value;
+    if (!/^\d{4,8}$/.test(a)) { showAlert('The PIN must be 4 to 8 digits.'); return; }
+    if (a !== b) { showAlert('The two PINs are not the same.'); return; }
+    if (!pw) { showAlert('Enter your Admin password.'); return; }
+    try { await api('setPin', { kind: kind, pin: a, password: pw }); cm('m-adm'); showSync('ok', 'PIN changed'); admPins(); }
+    catch (e) { showAlert(e.message, 'Not changed'); }
+  });
+}
+
+// ── Backups ──
+function admLastDownload() { try { return localStorage.getItem('fin_last_backup_dl') || ''; } catch (e) { return ''; } }
+async function admBackups() {
+  var s = {}, l = {};
+  try { s = await api('backupSchedule'); } catch (e) {}
+  l = await api('listBackups');
+  var last = admLastDownload(), age = last ? Math.floor((Date.now() - new Date(last).getTime()) / 86400000) : 9999;
+  var rows = (l.backups || []).map(function (b) {
+    var nm = b.name.replace(/\.json$/, '');
+    return '<tr><td style="font-weight:600;white-space:normal">' + esc(nm) + '</td><td class="adm-mut" style="white-space:nowrap">' + Math.max(1, Math.round(b.size / 1024)) + ' KB</td><td class="adm-acts"><a onclick="admBackupDownload(\'' + jsq(b.id) + '\',\'' + jsq(nm) + '\')">Download</a><a class="d" onclick="restoreBackup(\'' + jsq(b.id) + '\',\'' + jsq(nm) + '\')">Restore</a></td></tr>';
+  }).join('') || '<tr><td colspan="3" class="adm-mut" style="text-align:center;padding:20px">No backups yet.</td></tr>';
+  $$('adm-body').innerHTML = (age > 30 ? '<div class="adm-warn">Monthly reminder: download a copy to your own computer. ' + (last ? 'The last download was ' + age + ' days ago.' : 'You have not downloaded one yet.') + '</div>' : '')
+    + '<div class="adm-grid"><div class="adm-card"><h3>Automatic backup</h3><div class="adm-big" style="margin:6px 0">' + (s.enabled ? 'On' : 'Not running') + '</div><div class="adm-sub">Every Friday at 9:00 pm (Dhaka). The last 8 weekly copies are kept.' + (s.enabled ? '' : ' The scheduler is not switched on in this project; "Back up now" still works.') + '</div></div>'
+    + '<div class="adm-card"><h3>Last backup</h3><div class="adm-big" style="margin:6px 0">' + (l.lastBackupAt ? esc(dhakaStamp(l.lastBackupAt)) : 'never') + '</div><div class="adm-sub">Last download to your computer: ' + (last ? esc(dhakaStamp(last)) : 'never') + '</div></div></div>'
+    + '<div class="adm-card"><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px"><button class="btn bp bsm" onclick="admBackupNow()">Back up now</button><button class="btn bg bsm" onclick="admBackupDownload(\'\',\'now\')">Download current data</button></div>'
+    + '<div class="tw"><table class="adm-table"><thead><tr><th>Backup</th><th>Size</th><th>Actions</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>';
+}
+async function admBackupNow() {
+  showSync('saving', 'Backing up...');
+  try { var r = await api('backupNow', { label: 'Manual' }); FIN.backup = { lastBackupAt: r.lastBackupAt, lastBackupName: r.name }; renderBackupBadge(); showSync('ok', 'Backup saved'); admBackups(); }
+  catch (e) { showSync('err', 'Backup failed'); showAlert('Backup failed: ' + e.message); }
+}
+async function admBackupDownload(id, nm) {
+  showSync('saving', 'Preparing backup...');
+  try {
+    var r = id ? await api('getBackup', { fileId: id }) : await api('exportBackup');
+    var blob = new Blob([JSON.stringify(r.backup)], { type: 'application/json' }), url = URL.createObjectURL(blob), a = document.createElement('a');
+    a.href = url; a.download = (id ? nm.replace(/[^A-Za-z0-9._ -]+/g, '') : 'finance-backup-' + todayISO()) + '.json';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    try { localStorage.setItem('fin_last_backup_dl', new Date().toISOString()); } catch (e) {}
+    showSync('ok', 'Backup downloaded'); if (ADM.tab === 'backups') admBackups();
+  } catch (e) { showSync('err', 'Download failed'); showAlert(e.message || 'Download failed'); }
+}
+
+// ── Rates ──
+async function admRates() {
+  await ensureModuleLoaded(CREDITORS, loadCreditorsData, 'exchange rates');
+  var rows = CREDITOR_CURRENCIES.filter(function (c) { return c.code !== 'BDT'; }).map(function (c) {
+    var rate = creditorRate(c.code);
+    return '<tr><td style="font-weight:600">' + c.code + ' <span class="adm-mut">(' + c.symbol + ')</span></td><td class="mn" style="text-align:right">' + (rate ? fmtCreditorBDT(rate) : '\u2014') + '</td></tr>';
+  }).join('');
+  $$('adm-body').innerHTML = '<div class="adm-card"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><div><h3>Exchange rates</h3><div class="adm-sub" style="margin:0">Fetched once a day when you or Management open the app (if the saved rates are older than about 20 hours) and saved once for everyone. Commercial never fetches.</div><div style="margin-top:8px" class="adm-mut">Updated: <b style="color:var(--tx)">' + esc(CREDITORS.ratesLastUpdated ? dhakaStamp(CREDITORS.ratesLastUpdated) : 'never') + '</b></div></div><button class="btn bp bsm" id="adm-rates-go" onclick="admRatesRefresh()">Refresh now</button></div></div>'
+    + '<div class="adm-card" style="padding:6px 6px 10px"><div class="tw"><table class="adm-table"><thead><tr><th>Currency</th><th style="text-align:right">BDT per 1 unit</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>';
+}
+async function admRatesRefresh() {
+  var b = $$('adm-rates-go'); if (b) b.disabled = true;
+  await refreshRatesAndSync(true);
+  if (ADM.tab === 'rates') admRates();
+}
+
+// ───────── Daily rates (Admin and Management only) ─────────
+var _ratesBusy = false;
+async function refreshRatesAndSync(manual) {
+  if (_ratesBusy || isCom()) return false;
+  _ratesBusy = true;
+  try {
+    var res = await api('fetchCreditorRatesNow');
+    if (!res.ok) { if (manual) showAlert('Could not fetch live rates right now. Your existing rates are unchanged.\n\n' + (res.errorMessage || ''), 'Rates'); return false; }
+    FIN.usdRate = NUM(res.rates && res.rates.USD) || FIN.usdRate; FIN.ratesUpdated = res.lastUpdated; FIN.rateSource = 'live';
+    if (CREDITORS._loaded || CREDITORS.items.length) {
+      CREDITORS.rates = Object.assign({ BDT: 1 }, res.rates || {}); CREDITORS.ratesLastUpdated = res.lastUpdated;
+      CREDITORS.items.forEach(function (c) { c.bdtAmount = creditorBdtFor(c); });
+      LIABILITY.items.forEach(function (l) { if (l.currency === 'USD') l.bdtAmount = NUM(l.usdAmount) * creditorRate('USD'); });
+    }
+    try { renderActivePage(); } catch (e) {}
+    if (manual) showSync('ok', 'Rates updated');
+    return true;
+  } catch (e) { if (manual) showAlert('Could not fetch live rates: ' + e.message, 'Rates'); return false; }
+  finally { _ratesBusy = false; }
+}
+async function dailyRates() {
+  if (isCom() || !AUTH || !AUTH.user) return;
+  var t = FIN.ratesUpdated ? new Date(FIN.ratesUpdated).getTime() : 0;
+  if (t && Date.now() - t < 20 * 3600 * 1000) return;
+  await refreshRatesAndSync(false);
+}
+
+// ───────── PINs: Admin never needs one; Management uses the database ─────────
+// (checkPin / submitPin are replaced in the build; this is the lockout message helper)
+function pinMessage(r) {
+  if (r && r.locked) return 'Too many wrong tries. Locked for ' + (r.wait || 15) + ' minute' + ((r.wait || 15) === 1 ? '' : 's') + '.';
+  if (r && typeof r.left === 'number') return 'Incorrect PIN. ' + r.left + ' ' + (r.left === 1 ? 'try' : 'tries') + ' left.';
+  return 'Incorrect PIN. Try again.';
+}
+
+// ───────── Stop acceptance ─────────
+function canStop() { return isAdmin() || isMD(); }
+var _stopCtx = null;
+function docStopLabel(d) { return (d.stopFrom === 'lc' ? 'Whole LC: ' : '') + (d.stopNote || ''); }
+async function openStopDoc(docId) {
+  var d = FIN.state.docs[docId]; if (!d || !canStop()) return;
+  if (!await checkPin()) return;
+  _stopCtx = { kind: 'doc', id: docId, edit: false };
+  $$('st-title').textContent = 'Stop acceptance on this document';
+  $$('st-info').innerHTML = '<div class="ir"><span>LC <b>' + esc(docLcNo(d)) + '</b> &middot; ' + esc((lcOf(d.bankLcId) || {}).supplier || '') + '</span></div><div class="ir"><span>Document</span><b>' + UC(LCM.cents(d.usd)) + '</b></div>';
+  $$('st-note').value = ''; $$('st-go').textContent = 'Stop acceptance';
+  $$('st-help').textContent = 'The document moves to the red pile and cannot be accepted until you mark the dispute resolved. Totals do not change.';
+  om('m-stop'); setTimeout(function () { $$('st-note').focus(); }, 120);
+}
+async function openStopLC(lcId) {
+  var l = lcOf(lcId); if (!l || !canStop()) return;
+  if (!await checkPin()) return;
+  _stopCtx = { kind: 'lc', id: lcId, edit: false };
+  $$('st-title').textContent = 'Stop acceptance on LC ' + l.lcNo;
+  $$('st-info').innerHTML = lcInfoBox(lcId);
+  $$('st-note').value = ''; $$('st-go').textContent = 'Stop acceptance';
+  $$('st-help').textContent = 'Documents already at the bank join the red pile, and documents that arrive later start stopped.';
+  om('m-stop'); setTimeout(function () { $$('st-note').focus(); }, 120);
+}
+async function openEditStop(docId) {
+  var d = FIN.state.docs[docId]; if (!d || !canStop()) return;
+  if (!await checkPin()) return;
+  var lcLevel = d.stopFrom === 'lc';
+  _stopCtx = { kind: lcLevel ? 'lc' : 'doc', id: lcLevel ? d.bankLcId : docId, edit: true };
+  $$('st-title').textContent = 'Edit stop note';
+  $$('st-info').innerHTML = '<div class="ir"><span>LC <b>' + esc(docLcNo(d)) + '</b>' + (lcLevel ? ' (whole LC)' : '') + '</span></div>';
+  $$('st-note').value = d.stopNote || ''; $$('st-go').textContent = 'Save note';
+  $$('st-help').textContent = '';
+  om('m-stop'); setTimeout(function () { $$('st-note').focus(); }, 120);
+}
+async function svStop() {
+  var c = _stopCtx; if (!c) return;
+  var note = $$('st-note').value.trim();
+  if (!note) { showAlert('Write the reason for the stop.'); return; }
+  cm('m-stop');
+  var op = c.kind === 'lc' ? { type: c.edit ? 'editStopLC' : 'stopLC', lcId: c.id, date: todayISO(), note: note } : { type: c.edit ? 'editStopDoc' : 'stopDoc', docId: c.id, date: todayISO(), note: note };
+  await runLc(op);
+}
+async function openResolveStopFor(docId) {
+  var d = FIN.state.docs[docId]; if (!d || !canStop()) return;
+  if (!await checkPin()) return;
+  var lcLevel = d.stopFrom === 'lc';
+  _stopCtx = { kind: lcLevel ? 'lc' : 'doc', id: lcLevel ? d.bankLcId : docId };
+  $$('sr-title').textContent = lcLevel ? 'Dispute resolved \u2014 whole LC ' + docLcNo(d) : 'Dispute resolved';
+  $$('sr-info').innerHTML = '<div class="ir"><span>LC <b>' + esc(docLcNo(d)) + '</b> &middot; ' + UC(LCM.cents(d.usd)) + '</span></div><div class="ir"><span>Stopped on ' + FD(d.stopDate) + (d.stopBy ? ' by ' + esc(d.stopBy) : '') + '</span><b style="max-width:60%;text-align:right">' + esc(d.stopNote || '') + '</b></div>'
+    + (lcLevel ? '<div class="ir"><span style="color:var(--am)">This releases every document stopped because of the LC.</span></div>' : '');
+  $$('sr-date').value = todayISO(); $$('sr-note').value = '';
+  om('m-stop-resolve'); setTimeout(function () { $$('sr-note').focus(); }, 120);
+}
+async function openResolveStopLC(lcId) {
+  var l = lcOf(lcId); if (!l || !canStop()) return;
+  if (!await checkPin()) return;
+  _stopCtx = { kind: 'lc', id: lcId };
+  $$('sr-title').textContent = 'Dispute resolved \u2014 LC ' + l.lcNo;
+  $$('sr-info').innerHTML = '<div class="ir"><span>Stopped on ' + FD(l.stopDate) + (l.stopBy ? ' by ' + esc(l.stopBy) : '') + '</span><b style="max-width:60%;text-align:right">' + esc(l.stopNote || '') + '</b></div>';
+  $$('sr-date').value = todayISO(); $$('sr-note').value = '';
+  om('m-stop-resolve'); setTimeout(function () { $$('sr-note').focus(); }, 120);
+}
+async function svResolveStop() {
+  var c = _stopCtx; if (!c) return;
+  var date = $$('sr-date').value; if (!date) { showAlert('Enter the date.'); return; }
+  cm('m-stop-resolve');
+  await runLc(c.kind === 'lc' ? { type: 'resolveStopLC', lcId: c.id, date: date, note: $$('sr-note').value.trim() } : { type: 'resolveStopDoc', docId: c.id, date: date, note: $$('sr-note').value.trim() });
+}
+function stopPileHtml(docs) {
+  if (!docs.length) return '';
+  var tot = docs.reduce(function (s, d) { return s + LCM.cents(d.usd); }, 0), today = todayISO();
+  var rows = docs.map(function (d) {
+    var l = lcOf(d.bankLcId) || {}, c = LCM.cents(d.usd), days = d.stopDate ? dayDiff(d.stopDate, today) : '';
+    return '<tr id="dab-' + esc(d.id) + '">'
+      + '<td class="mn" style="font-weight:700;color:var(--tx)">' + esc(docLcNo(d)) + flagChip(d.bankLcId) + '</td>'
+      + '<td>' + esc(l.company || '\u2014') + '</td><td style="font-weight:600">' + esc(l.supplier || '\u2014') + '</td>'
+      + '<td class="r mn" style="font-weight:600">' + UC(c) + '</td><td class="r mn">' + TKc(c) + '</td>'
+      + '<td class="dm">' + FD(d.arrivedDate) + '</td>'
+      + '<td class="dm">' + FD(d.stopDate) + (days === '' ? '' : '<div style="font-size:10.5px;color:var(--tx3)">' + days + ' day' + (days === 1 ? '' : 's') + '</div>') + (d.stopBy ? '<div style="font-size:10.5px;color:var(--tx3)">' + esc(d.stopBy) + '</div>' : '') + '</td>'
+      + '<td style="white-space:normal;max-width:260px;font-weight:600;color:var(--rd)">' + esc(docStopLabel(d)) + '</td>'
+      + '<td class="no-print act"><div class="aw"><button class="btn bp bsm" onclick="openResolveStopFor(\'' + jsq(d.id) + '\')">Dispute resolved</button><button class="btn bg bsm" onclick="openEditStop(\'' + jsq(d.id) + '\')">Edit note</button></div></td></tr>';
+  }).join('');
+  return '<div class="stop-pile"><div class="sp-h"><div><b class="t">STOP ACCEPTANCE &mdash; documents in dispute</b><div class="s">Cannot be accepted until the dispute is marked resolved. Still counted in the totals below.</div></div><div class="mn" style="font-weight:700;color:var(--rd)">' + docs.length + ' &middot; ' + UC(tot) + '</div></div>'
+    + '<div class="tw"><table><thead><tr><th>LC No.</th><th>Company</th><th>Supplier</th><th class="r">Document</th><th class="r">BDT</th><th>Arrived</th><th>Stopped</th><th>Reason</th><th class="no-print">Actions</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>';
+}
+
+// ───────── UD (Cash LC) ─────────
+function udCell(r) {
+  var done = r.ud === 'done';
+  var on = isAdmin() ? ' onclick="toggleUd(\'' + jsq(r.id) + '\')" title="Click to change"' : '';
+  return '<span class="pill ' + (done ? 'y' : 'p') + '" style="' + (isAdmin() ? 'cursor:pointer' : 'cursor:default') + '"' + on + '>' + (done ? 'UD Done \u2713' : 'UD Pending') + '</span>';
+}
+async function toggleUd(id) {
+  if (!isAdmin()) return;
+  var r = FIN.state.debits[id]; if (!r) return;
+  var nv = r.ud === 'done' ? 'pending' : 'done';
+  if (nv === 'pending') {
+    var v = LCM.debitView(r, debitAgg(r));
+    if (v && v.accept !== 'none') { showAlert('UD cannot be set back to pending: acceptance has already been given on this LC, which needs the UD.', 'UD'); return; }
+  }
+  try {
+    await api('updateDebit', { id: id, field: 'ud', value: nv });
+    finSetDebitField(id, 'ud', nv);
+    showSync('ok', nv === 'done' ? 'UD marked done' : 'UD marked pending');
+    rDT();
+  } catch (e) { showAlert(e.message, 'Not saved'); }
+}
+function udBar(all) {
+  var bar = $$('ud-bar'); if (!bar) return;
+  if (!all.length) { bar.style.display = 'none'; return; }
+  var pend = all.filter(function (r) { return r.ud !== 'done'; }).length;
+  bar.style.display = '';
+  bar.style.background = pend ? '' : 'var(--grbg)'; bar.style.color = pend ? '' : 'var(--gr)';
+  bar.innerHTML = pend ? '<span>UD pending for ' + pend + ' of ' + all.length + ' LC' + (all.length === 1 ? '' : 's') + '</span><span>Click to show only these</span>' : '<span>UD done for all ' + all.length + ' LC' + (all.length === 1 ? '' : 's') + ' &#10003;</span><span></span>';
+}
+function udBarClick() { var f = $$('fud'); if (f) { f.value = 'pending'; rDT(); } }
+
+// ───────── Admin page navigation ─────────
+var _navigate0 = navigate;
+navigate = async function (pg, pid) {
+  if (pg === 'admin') {
+    if (!isAdmin()) return;
+    closeMobileSidebar();
+    document.querySelectorAll('.page').forEach(function (p) { p.classList.remove('active'); });
+    document.querySelectorAll('.ni').forEach(function (n) { n.classList.remove('active'); });
+    document.querySelectorAll('.nsi').forEach(function (n) { n.classList.remove('active'); });
+    $$('page-admin').classList.add('active'); $$('nav-admin').classList.add('active');
+    window.scrollTo(0, 0);
+    return admRender();
+  }
+  return _navigate0(pg, pid);
+};
+var _initApp0 = initApp;
+initApp = async function () {
+  await _initApp0();
+  setTimeout(function () { dailyRates(); }, 3000);
+};
+
 // ── INIT ──
 applyTheme();
 updateConnStatus(); // show the offline banner straight away if the page opens offline
@@ -8402,7 +8985,7 @@ if(checkSession()){
 <div class="modal-overlay" id="m-audit">
   <div class="modal" style="width:760px;max-height:80vh">
     <div class="mh">
-      <h2>&#128196; Audit Log \u2014 Recent Changes</h2>
+      <h2>&#128196; Audit Log &#x2014; Recent Changes</h2>
       <div style="display:flex;gap:8px;align-items:center">
         <button class="btn bdg bsm" onclick="clearAudit()">Clear Log</button>
         <button class="mcl" onclick="cm('m-audit')">&#x2715;</button>
@@ -8614,7 +9197,7 @@ if(checkSession()){
   <div class="modal" style="width:640px;max-height:88vh">
     <div class="mh"><h2>Backup</h2><button class="mcl" onclick="cm('m-backup')">&#x2715;</button></div>
     <p style="font-size:13px;color:var(--tx2);line-height:1.6">Last backup: <b id="bk-last" style="color:var(--tx)">&mdash;</b><br>
-      Automatic backup every day, kept for 30 days, inside the database.</p>
+      Automatic backup every Friday at 9:00 pm, the last 8 are kept, inside the database.</p>
     <div style="display:flex;gap:8px;margin:14px 0;flex-wrap:wrap">
       <button class="btn bp bsm" onclick="backupNowClick()">Back up now</button>
       <button class="btn bg bsm" onclick="downloadBackup()">Download JSON</button>
@@ -8745,14 +9328,14 @@ if(checkSession()){
   </div>
 </div>
 
-<!-- REVIEW UNCHECKED LOANS MODAL \u2014 surfaces every Main Loan/PC/PAD entry not
+<!-- REVIEW UNCHECKED LOANS MODAL &#x2014; surfaces every Main Loan/PC/PAD entry not
      confirmed against this week's bank statement, so nothing lingers silently
      once it's actually been paid off and dropped from the bank's sheet -->
 <div class="modal-overlay" id="m-review-unchecked">
   <div class="modal" style="width:680px;max-height:80vh">
     <div class="mh"><h2>Review Unchecked Loans</h2><button class="mcl" onclick="cm('m-review-unchecked')">&#x2715;</button></div>
     <p style="font-size:12px;color:var(--tx2);margin-bottom:14px">
-      These loans have not been confirmed against this week's bank statement. For each: if it's still active, mark it verified. If it no longer appears on the bank's sheet, it's been paid off \u2014 remove it.
+      These loans have not been confirmed against this week's bank statement. For each: if it's still active, mark it verified. If it no longer appears on the bank's sheet, it's been paid off &#x2014; remove it.
     </p>
     <div id="review-unchecked-list" style="max-height:50vh;overflow-y:auto;border:1px solid var(--bdr);border-radius:var(--r);"></div>
     <div class="mft">
@@ -8776,13 +9359,13 @@ if(checkSession()){
 </div>
 
 
-<!-- CREDITOR CURRENCY RATES MODAL \u2014 read-only, sourced from a weekly
+<!-- CREDITOR CURRENCY RATES MODAL &#x2014; read-only, sourced from a weekly
      automatic live refresh (mid-market reference rates), with a manual
      Refresh Now for whenever you want the latest right away -->
 <div class="modal-overlay" id="m-creditor-rates">
   <div class="modal" style="width:480px">
     <div class="mh"><h2>Currency Rates &rarr; BDT</h2><button class="mcl" onclick="cm('m-creditor-rates')">&#x2715;</button></div>
-    <p style="font-size:12px;color:var(--tx2);margin-bottom:6px">Live mid-market reference rates, refreshed automatically every week. Used everywhere across every category \u2014 no manual typing needed.</p>
+    <p style="font-size:12px;color:var(--tx2);margin-bottom:6px">Live mid-market reference rates, refreshed automatically every week. Used everywhere across every category &#x2014; no manual typing needed.</p>
     <p id="cred-rates-updated" style="font-size:11px;color:var(--tx3);margin-bottom:14px">Last updated: &mdash;</p>
     <div id="cred-rates-list" style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px"></div>
     <div class="mft">
@@ -8900,7 +9483,7 @@ if(checkSession()){
     </div>
     <p style="color:var(--tx2);font-size:13px;margin-bottom:18px">Enter your PIN to confirm this action</p>
     <div class="mfg" style="align-items:center">
-      <input type="password" id="pin-input" placeholder="\u2022\u2022\u2022\u2022" maxlength="10"
+      <input type="password" id="pin-input" placeholder="&#x2022;&#x2022;&#x2022;&#x2022;" maxlength="10"
         style="text-align:center;font-size:22px;letter-spacing:6px;width:160px;background:var(--bg3);border:1px solid var(--bdr);color:var(--tx);padding:11px;border-radius:var(--r);outline:none"
         onkeydown="if(event.key==='Enter')submitPin()">
     </div>
@@ -8922,6 +9505,38 @@ if(checkSession()){
     </div>
     <p style="color:var(--tx2);font-size:13px;margin-bottom:18px">Which ledger would you like to open?</p>
     <div id="ledger-select-options" style="display:flex;flex-direction:column;gap:10px"></div>
+  </div>
+</div>
+
+<!-- ===== Supabase release: shared modals ===== -->
+<div class="modal-overlay" id="m-adm">
+  <div class="modal" style="width:480px">
+    <div class="mh"><h2 id="adm-m-title"></h2><button class="mcl" onclick="cm('m-adm')">&#x2715;</button></div>
+    <div class="mb" id="adm-m-body" style="margin-top:6px"></div>
+    <div class="mft"><button class="btn bg" onclick="cm('m-adm')">Cancel</button><button class="btn bp" id="adm-m-go" onclick="admModalGo()">Save</button></div>
+  </div>
+</div>
+<div class="modal-overlay" id="m-stop">
+  <div class="modal" style="width:500px">
+    <div class="mh"><h2 id="st-title">Stop acceptance</h2><button class="mcl" onclick="cm('m-stop')">&#x2715;</button></div>
+    <div class="infobox" id="st-info"></div>
+    <div class="mb" style="margin-top:12px">
+      <div class="mfg"><label>Reason (required)</label><input type="text" id="st-note" placeholder="e.g. party disputes the quantity" onkeydown="if(event.key==='Enter'){event.preventDefault();document.getElementById('st-go').click();}"></div>
+      <div id="st-help" style="font-size:11.5px;color:var(--tx3)"></div>
+    </div>
+    <div class="mft"><button class="btn bg" onclick="cm('m-stop')">Cancel</button><button class="btn bdg" id="st-go" onclick="svStop()">Stop acceptance</button></div>
+  </div>
+</div>
+<div class="modal-overlay" id="m-stop-resolve">
+  <div class="modal" style="width:500px">
+    <div class="mh"><h2 id="sr-title">Dispute resolved</h2><button class="mcl" onclick="cm('m-stop-resolve')">&#x2715;</button></div>
+    <div class="infobox" id="sr-info"></div>
+    <div class="mb" style="margin-top:12px">
+      <div class="mfg"><label>Resolved on</label><input type="date" id="sr-date"></div>
+      <div class="mfg"><label>Note (how it was settled)</label><input type="text" id="sr-note" placeholder="optional" onkeydown="if(event.key==='Enter'){event.preventDefault();document.getElementById('sr-go').click();}"></div>
+      <div style="font-size:11.5px;color:var(--tx3)">The document goes back to the normal list and can be accepted. This stays in the Activity log.</div>
+    </div>
+    <div class="mft"><button class="btn bg" onclick="cm('m-stop-resolve')">Cancel</button><button class="btn bp" id="sr-go" onclick="svResolveStop()">Dispute resolved</button></div>
   </div>
 </div>
 
